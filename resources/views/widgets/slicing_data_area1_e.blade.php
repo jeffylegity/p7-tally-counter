@@ -1,8 +1,8 @@
-<br><br><br><br>
+<br>
 @if (getEshiftLatestArea1() == '[]')
 <div class="card-header" style="background-color:#ff5b5b;color:white;">
    <center>
-      <h4 style="font-size:200%;white-space:nowrap;">
+      <h4 style="font-size:250%;white-space:nowrap;">
          <b>
             Data not yet generated
          </b>
@@ -26,10 +26,10 @@
          <div class="col-lg-12">
             <div class="card">
                <div class="table-responsive">
-                  <table class="table table-striped table-bordered" cellspacing="0" width="100%" border="3">
+                  <table class="table-striped" width="100%" style="height:600px;">
                     <thead>
                       <tr style="text-align:center;">
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;white-space:nowrap;"><b>M/C#</b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;white-space:nowrap;"><b>MACH#</b></h4></th>
                         <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;white-space:nowrap;"><b>Model</b></h4></th>
                         <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;white-space:nowrap;"><b>Plan</b></h4></th>
                         <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;white-space:nowrap;"><b>Actual   </b></h4></th>
@@ -38,7 +38,7 @@
                     </thead>
                     <tbody>
                         @foreach ($record as $data)
-                        <tr style="text-align:center;border-bottom:2px solid black;">
+                        <tr style="text-align:center;">
                            <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-166</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
@@ -75,7 +75,7 @@
                               </h4>
                            </td>
                         </tr>   
-                        <tr style="text-align:center;border-bottom:2px solid black;">
+                        <tr style="text-align:center;">
                            <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-167</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
@@ -112,7 +112,7 @@
                               </h4>
                            </td>
                         </tr> 
-                        <tr style="text-align:center;border-bottom:2px solid black;">
+                        <tr style="text-align:center;">
                            <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-168</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
@@ -149,7 +149,7 @@
                               </h4>
                            </td>
                         </tr>
-                        <tr style="text-align:center;border-bottom:2px solid black;">
+                        <tr style="text-align:center;">
                            <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-169</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">

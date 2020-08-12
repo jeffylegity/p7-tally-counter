@@ -35,7 +35,8 @@ class UserController extends Controller
       ->where(['data_stored'=>0])->first();
       foreach ($fetch as $data) {
          $data_inc      = $data+1;
-         $update_data   = DB::table($data_tbl_selector)->update([
+         $update_data   = DB::table($data_tbl_selector)->where(['data_stored'=>0])
+         ->update([
             $col_selector => $data_inc,
          ]);
       }
@@ -93,7 +94,8 @@ class UserController extends Controller
       ->where(['data_stored'=>0])->first();
       foreach ($fetch as $data) {
          $data_inc      = $data-1;
-         $update_data   = DB::table($data_tbl_selector)->update([
+         $update_data   = DB::table($data_tbl_selector)->where(['data_stored'=>0])
+         ->update([
             $col_selector => $data_inc,
          ]);
       }

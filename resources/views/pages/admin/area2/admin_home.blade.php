@@ -6,14 +6,8 @@
             @if (getLatestArea2() == '[]')
                <div class="col-xl-12">
                   <div class="alert alert-danger" style="background-color:#ff5b5b;color:white;">
-                     No data, please generate
+                     Data not yet generated
                   </div>
-               </div>
-               <div class="col-xl-12">
-                  <a href="{{route('admin.generate_record.area2')}}" class="btn btn-primary">
-                     <i class="mdi mdi-file-document-box"></i>
-                     Generate Data
-                  </a>
                </div>
             @else
                @foreach ($slicing_data as $data)
@@ -22,7 +16,7 @@
                   <div class="col-xl-12">
                      <div class="card-box">
                         <div>
-                           <a href="{{route('admin.save_record.area2',$data->id)}}" class="btn btn-danger"><i class="mdi mdi-content-save"></i> Save Record</a>
+                           {{-- <a href="{{route('admin.save_record.area2',$data->id)}}" class="btn btn-danger"><i class="mdi mdi-content-save"></i> Save Record</a> --}}
                            <a href="{{route('cache.clear')}}" class="btn" style="background-color:#034ea2;color:white;"><i class="mdi mdi-broom"></i> Clear Cache</a>
                         </div>
                         <div class="form-group">
@@ -169,14 +163,8 @@
                   @else
                   <div class="col-xl-12">
                      <div class="alert alert-danger" style="background-color:#dc3545;color:white;">
-                        No data, please generate
+                        Data not yet generated
                      </div>
-                  </div>
-                  <div class="col-xl-12">
-                     <a href="{{route('admin.generate_record.area2')}}" class="btn btn-primary">
-                        <i class="mdi mdi-file-document-box"></i>
-                        Generate Data
-                     </a>
                   </div>
                   @endif
                   </div>

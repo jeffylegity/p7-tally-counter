@@ -12,7 +12,7 @@
 @else
 <div class="card-header" style="background-color:#034ea2;color:white;">
    <center>
-      <h4 style="font-size:250%">
+      <h4 style="font-size:200%">
          <b>
             @foreach($eShiftdate = getEshiftLatestArea2(); as $shift)
              (Area 2 - E Shift / {{Carbon\Carbon::parse($shift->date_generated)->format('M d, Y')}})
@@ -29,19 +29,19 @@
                   <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead>
                       <tr style="text-align:center;">
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:250%;"><b>SLMC#</b></h4></th>
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:250%;"><b>Model</b></h4></th>
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:250%;"><b>Plan</b></h4></th>
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:250%;"><b>Actual   </b></h4></th>
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:250%;"><b>Testblock</b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>MACH#</b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Model</b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Plan</b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Actual   </b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Testblock</b></h4></th>
                       </tr>
                     </thead>
                     <tbody>
                         @foreach ($record as $data)
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-156</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-156</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(1)}}
                                  </b>
@@ -76,9 +76,9 @@
                            </td>
                         </tr>   
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-161</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-161</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(2)}}
                                  </b>
@@ -113,9 +113,9 @@
                            </td>
                         </tr> 
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-162</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-162</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(3)}}
                                  </b>
@@ -150,9 +150,9 @@
                            </td>
                         </tr>
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-163</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-163</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(4)}}
                                  </b>
@@ -187,9 +187,9 @@
                            </td>
                         </tr> 
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-164</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-164</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(5)}}
                                  </b>
@@ -224,9 +224,9 @@
                            </td>
                         </tr>  
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-171</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-171</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(6)}}
                                  </b>
@@ -261,9 +261,9 @@
                            </td>
                         </tr>   
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-172</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-172</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(7)}}
                                  </b>
@@ -298,9 +298,9 @@
                            </td>
                         </tr> 
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-179</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-179</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(8)}}
                                  </b>
@@ -335,9 +335,9 @@
                            </td>
                         </tr>
                         <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:250%"><b>SL-180</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-180</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(9)}}
                                  </b>
@@ -372,9 +372,9 @@
                            </td>
                         </tr> 
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:250%"><b>SL-181</b></h4></td>
+                           <td><h4 style="font-size:200%"><b>SL-181</b></h4></td>
                            <td>
-                              <h4 style="font-size:250%">
+                              <h4 style="font-size:200%">
                                  <b>
                                     {{getSlModelArea2(10)}}
                                  </b>

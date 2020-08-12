@@ -2,7 +2,7 @@
 @if (getFshiftLatestArea4() == '[]')
 <div class="card-header" style="background-color:#ff5b5b;color:white;">
    <center>
-      <h4 style="font-size:200%">
+      <h4 style="font-size:250%">
          <b>
             Data not yet generated
          </b>
@@ -29,7 +29,7 @@
                   <table id="datatable" class="table table-striped table-bordered" cellspacing="0" width="100%">
                     <thead>
                       <tr style="text-align:center;">
-                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>M/asdf#</b></h4></th>
+                        <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>MACH#</b></h4></th>
                         <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Model</b></h4></th>
                         <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Plan</b></h4></th>
                         <th style="background-color:#00929e;color:white;"><h4 style="font-size:200%;"><b>Actual   </b></h4></th>

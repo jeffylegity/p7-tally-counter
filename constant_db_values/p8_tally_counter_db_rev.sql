@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2020 at 12:08 AM
+-- Generation Time: Jun 04, 2020 at 05:39 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.6
 
@@ -149,8 +149,10 @@ CREATE TABLE `slicing_data_area1` (
 --
 
 INSERT INTO `slicing_data_area1` (`id`, `sl166_target`, `sl167_target`, `sl168_target`, `sl169_target`, `sl170_target`, `sl166_actual`, `sl167_actual`, `sl168_actual`, `sl169_actual`, `sl170_actual`, `sl166_test_block`, `sl167_test_block`, `sl168_test_block`, `sl169_test_block`, `sl170_test_block`, `sl166_model`, `sl167_model`, `sl168_model`, `sl169_model`, `sl170_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
-(1, '9', '8', '9', '8', '9', '2', '1', '2', '2', '2', '2', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-11 15:15:00', 'F', 1, NULL, NULL),
-(2, '12', '12', '12', '12', '12', '2', '1', '2', '2', '2', '2', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-11 15:21:52', 'E', 0, NULL, NULL);
+(23, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:04:10', 'E', 1, NULL, NULL),
+(24, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:21', 'E', 1, NULL, NULL),
+(25, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:38', 'E', 1, NULL, NULL),
+(26, '12', '12', '12', '21', '12', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:19:43', 'E', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -207,6 +209,17 @@ CREATE TABLE `slicing_data_area2` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_data_area2`
+--
+
+INSERT INTO `slicing_data_area2` (`id`, `sl156_target`, `sl161_target`, `sl162_target`, `sl163_target`, `sl164_target`, `sl171_target`, `sl172_target`, `sl179_target`, `sl180_target`, `sl181_target`, `sl156_actual`, `sl161_actual`, `sl162_actual`, `sl163_actual`, `sl164_actual`, `sl171_actual`, `sl172_actual`, `sl179_actual`, `sl180_actual`, `sl181_actual`, `sl156_test_block`, `sl161_test_block`, `sl162_test_block`, `sl163_test_block`, `sl164_test_block`, `sl171_test_block`, `sl172_test_block`, `sl179_test_block`, `sl180_test_block`, `sl181_test_block`, `sl156_model`, `sl161_model`, `sl162_model`, `sl163_model`, `sl164_model`, `sl171_model`, `sl172_model`, `sl179_model`, `sl180_model`, `sl181_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(20, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-20 05:15:02', 'E', 1, NULL, NULL),
+(21, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:04:10', 'E', 1, NULL, NULL),
+(22, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:22', 'E', 1, NULL, NULL),
+(23, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:38', 'E', 1, NULL, NULL),
+(24, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:19:43', 'E', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -261,6 +274,17 @@ CREATE TABLE `slicing_data_area3` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_data_area3`
+--
+
+INSERT INTO `slicing_data_area3` (`id`, `sl182_target`, `sl183_target`, `sl185_target`, `sl186_target`, `lap20_target`, `lap23_target`, `lap27_target`, `bc8_target`, `bc9_target`, `bc12_target`, `sl182_actual`, `sl183_actual`, `sl185_actual`, `sl186_actual`, `lap20_actual`, `lap23_actual`, `lap27_actual`, `bc8_actual`, `bc9_actual`, `bc12_actual`, `sl182_test_block`, `sl183_test_block`, `sl185_test_block`, `sl186_test_block`, `lap20_test_block`, `lap23_test_block`, `lap27_test_block`, `bc8_test_block`, `bc9_test_block`, `bc12_test_block`, `sl182_model`, `sl183_model`, `sl185_model`, `sl186_model`, `lap20_model`, `lap23_model`, `lap27_model`, `bc8_model`, `bc9_model`, `bc12_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(24, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-20 05:15:02', 'E', 1, NULL, NULL),
+(25, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:04:10', 'E', 1, NULL, NULL),
+(26, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:22', 'E', 1, NULL, NULL),
+(27, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:38', 'E', 1, NULL, NULL),
+(28, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:19:43', 'E', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -317,6 +341,17 @@ CREATE TABLE `slicing_data_area4` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_data_area4`
+--
+
+INSERT INTO `slicing_data_area4` (`id`, `sl193_target`, `sl194_target`, `sl195_target`, `sl196_target`, `sl197_target`, `sl198_target`, `sl199_target`, `sl200_target`, `bc7_target`, `csl1_target`, `sl193_actual`, `sl194_actual`, `sl195_actual`, `sl196_actual`, `sl197_actual`, `sl198_actual`, `sl199_actual`, `sl200_actual`, `bc7_actual`, `csl1_actual`, `sl193_test_block`, `sl194_test_block`, `sl195_test_block`, `sl196_test_block`, `sl197_test_block`, `sl198_test_block`, `sl199_test_block`, `sl200_test_block`, `bc7_test_block`, `csl1_test_block`, `sl193_model`, `sl194_model`, `sl195_model`, `sl196_model`, `sl197_model`, `sl198_model`, `sl199_model`, `sl200_model`, `bc7_model`, `csl1_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(21, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-20 05:15:02', 'E', 1, NULL, NULL),
+(22, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:04:10', 'E', 1, NULL, NULL),
+(23, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:22', 'E', 1, NULL, NULL),
+(24, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:05:38', 'E', 1, NULL, NULL),
+(25, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2020-02-27 10:19:43', 'E', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -348,7 +383,20 @@ INSERT INTO `slicing_logs_area1` (`id`, `data_id`, `machine_no`, `action`, `type
 (23, 2, 'SL-169', '+1', 'actual', 'HYU-0550G', '2020-02-11 15:22:41'),
 (24, 2, 'SL-170', '+1', 'actual', 'HYU-0727G', '2020-02-11 15:22:43'),
 (25, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-11 15:22:52'),
-(26, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-11 15:22:56');
+(26, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-11 15:22:56'),
+(27, 2, 'SL-167', '+1', 'actual', 'FAN-0140G', '2020-02-14 08:24:49'),
+(28, 2, 'SL-166', '+1', 'actual', 'MIN-0410D', '2020-02-14 08:34:28'),
+(29, 2, 'SL-166', '+1', 'actual', 'MIN-0410D', '2020-02-14 08:34:41'),
+(30, 2, 'SL-166', '+1', 'actual', 'MIN-0410D', '2020-02-14 08:34:43'),
+(31, 2, 'SL-166', '+1', 'actual', 'MIN-0410D', '2020-02-14 08:34:52'),
+(32, 2, 'SL-167', '+1', 'actual', 'FAN-0140G', '2020-02-14 08:35:00'),
+(33, 2, 'SL-167', '+1', 'actual', 'FAN-0140G', '2020-02-14 08:35:01'),
+(34, 2, 'SL-168', '+1', 'actual', 'FAN-0143G', '2020-02-14 08:35:08'),
+(35, 2, 'SL-169', '+1', 'actual', 'HYU-0550G', '2020-02-14 08:35:15'),
+(36, 2, 'SL-169', '+1', 'actual', 'HYU-0550G', '2020-02-14 08:35:16'),
+(37, 2, 'SL-166', '-1', 'test block', 'MIN-0410D', '2020-02-14 08:44:33'),
+(38, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-14 08:45:57'),
+(39, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-14 08:46:11');
 
 -- --------------------------------------------------------
 
@@ -417,7 +465,7 @@ CREATE TABLE `slicing_model_area1` (
 --
 
 INSERT INTO `slicing_model_area1` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
-(1, 'MIN-0410D', 'SL-166', NULL, NULL),
+(1, '---', 'SL-166', NULL, NULL),
 (2, 'FAN-0140G', 'SL-167', NULL, NULL),
 (3, 'FAN-0143G', 'SL-168', NULL, NULL),
 (4, 'HYU-0550G', 'SL-169', NULL, NULL),
@@ -666,31 +714,31 @@ ALTER TABLE `models`
 -- AUTO_INCREMENT for table `slicing_data_area1`
 --
 ALTER TABLE `slicing_data_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area2`
 --
 ALTER TABLE `slicing_data_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area3`
 --
 ALTER TABLE `slicing_data_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area4`
 --
 ALTER TABLE `slicing_data_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area1`
 --
 ALTER TABLE `slicing_logs_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area2`

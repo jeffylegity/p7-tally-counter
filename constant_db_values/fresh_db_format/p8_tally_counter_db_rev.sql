@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 12, 2020 at 12:08 AM
--- Server version: 10.3.16-MariaDB
--- PHP Version: 7.3.6
+-- Generation Time: Jun 04, 2020 at 05:47 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -143,14 +142,6 @@ CREATE TABLE `slicing_data_area1` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `slicing_data_area1`
---
-
-INSERT INTO `slicing_data_area1` (`id`, `sl166_target`, `sl167_target`, `sl168_target`, `sl169_target`, `sl170_target`, `sl166_actual`, `sl167_actual`, `sl168_actual`, `sl169_actual`, `sl170_actual`, `sl166_test_block`, `sl167_test_block`, `sl168_test_block`, `sl169_test_block`, `sl170_test_block`, `sl166_model`, `sl167_model`, `sl168_model`, `sl169_model`, `sl170_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
-(1, '9', '8', '9', '8', '9', '2', '1', '2', '2', '2', '2', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-11 15:15:00', 'F', 1, NULL, NULL),
-(2, '12', '12', '12', '12', '12', '2', '1', '2', '2', '2', '2', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, '2020-02-11 15:21:52', 'E', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -333,23 +324,6 @@ CREATE TABLE `slicing_logs_area1` (
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
---
--- Dumping data for table `slicing_logs_area1`
---
-
-INSERT INTO `slicing_logs_area1` (`id`, `data_id`, `machine_no`, `action`, `type`, `model_output`, `created_at`) VALUES
-(16, 2, 'SL-166', '+1', 'actual', 'MIN-0410D', '2020-02-11 15:22:30'),
-(17, 2, 'SL-166', '+1', 'actual', 'MIN-0410D', '2020-02-11 15:22:32'),
-(18, 2, 'SL-167', '+1', 'actual', 'FAN-0140G', '2020-02-11 15:22:33'),
-(19, 2, 'SL-168', '+1', 'actual', 'FAN-0143G', '2020-02-11 15:22:35'),
-(20, 2, 'SL-169', '+1', 'actual', 'HYU-0550G', '2020-02-11 15:22:36'),
-(21, 2, 'SL-170', '+1', 'actual', 'HYU-0727G', '2020-02-11 15:22:37'),
-(22, 2, 'SL-168', '+1', 'actual', 'FAN-0143G', '2020-02-11 15:22:39'),
-(23, 2, 'SL-169', '+1', 'actual', 'HYU-0550G', '2020-02-11 15:22:41'),
-(24, 2, 'SL-170', '+1', 'actual', 'HYU-0727G', '2020-02-11 15:22:43'),
-(25, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-11 15:22:52'),
-(26, 2, 'SL-166', '+1', 'test block', 'MIN-0410D', '2020-02-11 15:22:56');
-
 -- --------------------------------------------------------
 
 --
@@ -417,11 +391,11 @@ CREATE TABLE `slicing_model_area1` (
 --
 
 INSERT INTO `slicing_model_area1` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
-(1, 'MIN-0410D', 'SL-166', NULL, NULL),
-(2, 'FAN-0140G', 'SL-167', NULL, NULL),
-(3, 'FAN-0143G', 'SL-168', NULL, NULL),
-(4, 'HYU-0550G', 'SL-169', NULL, NULL),
-(5, 'HYU-0727G', 'SL-170', NULL, NULL);
+(1, '---', 'SL-166', NULL, NULL),
+(2, '---', 'SL-167', NULL, NULL),
+(3, '---', 'SL-168', NULL, NULL),
+(4, '---', 'SL-169', NULL, NULL),
+(5, '---', 'SL-170', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -442,16 +416,16 @@ CREATE TABLE `slicing_model_area2` (
 --
 
 INSERT INTO `slicing_model_area2` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
-(1, 'FAN-0143G', 'SL-156', NULL, NULL),
-(2, 'MIN-0411D', 'SL-161', NULL, NULL),
-(3, 'MIR-0505G', 'SL-162', NULL, NULL),
-(4, 'MIS-0292G', 'SL-163', NULL, NULL),
-(5, 'MIS-0510G', 'SL-164', NULL, NULL),
-(6, 'MIS-0518G', 'SL-171', NULL, NULL),
-(7, 'PAS-0297G', 'SL-172', NULL, NULL),
-(8, 'TTM-0857D', 'SL-179', NULL, NULL),
-(9, 'PCT-0293G', 'SL-180', NULL, NULL),
-(10, 'MIS-0510G', 'SL-181', NULL, NULL);
+(1, '---', 'SL-156', NULL, NULL),
+(2, '---', 'SL-161', NULL, NULL),
+(3, '---', 'SL-162', NULL, NULL),
+(4, '---', 'SL-163', NULL, NULL),
+(5, '---', 'SL-164', NULL, NULL),
+(6, '---', 'SL-171', NULL, NULL),
+(7, '---', 'SL-172', NULL, NULL),
+(8, '---', 'SL-179', NULL, NULL),
+(9, '---', 'SL-180', NULL, NULL),
+(10, '---', 'SL-181', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -472,16 +446,16 @@ CREATE TABLE `slicing_model_area3` (
 --
 
 INSERT INTO `slicing_model_area3` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
-(1, 'MIR-0505G', 'SL-182', NULL, NULL),
-(2, 'MIS-0292G', 'SL-183', NULL, NULL),
-(3, 'MIN-0410D', 'SL-185', NULL, NULL),
-(4, 'MIN-0411D', 'SL-186', NULL, NULL),
-(5, 'MIS-0518G', 'LAP-20', NULL, NULL),
-(6, 'MIS-0511G', 'LAP-23', NULL, NULL),
-(7, 'HYU-0550G', 'LAP-27', NULL, NULL),
-(8, 'MIS-0518G', 'BC-8', NULL, NULL),
-(9, 'MIS-0292G', 'BC-9', NULL, NULL),
-(10, 'HYU-0839G', 'BC-12', NULL, NULL);
+(1, '---', 'SL-182', NULL, NULL),
+(2, '---', 'SL-183', NULL, NULL),
+(3, '---', 'SL-185', NULL, NULL),
+(4, '---', 'SL-186', NULL, NULL),
+(5, '---', 'LAP-20', NULL, NULL),
+(6, '---', 'LAP-23', NULL, NULL),
+(7, '---', 'LAP-27', NULL, NULL),
+(8, '---', 'BC-8', NULL, NULL),
+(9, '---', 'BC-9', NULL, NULL),
+(10, '---', 'BC-12', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -502,16 +476,16 @@ CREATE TABLE `slicing_model_area4` (
 --
 
 INSERT INTO `slicing_model_area4` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
-(1, 'MIS-0510G', 'SL-193', NULL, NULL),
-(2, 'PAS-0297G', 'SL-194', NULL, NULL),
-(3, 'MIS-0518G', 'SL-195', NULL, NULL),
-(4, 'HYU-0727G', 'SL-196', NULL, NULL),
-(5, 'MIS-0511G', 'SL-197', NULL, NULL),
-(6, 'MIS-0510G', 'SL-198', NULL, NULL),
-(7, 'HYU-0727G', 'SL-199', NULL, NULL),
-(8, 'MIN-0410D', 'SL-200', NULL, NULL),
-(9, 'DAI-0501G', 'BC-7', NULL, NULL),
-(10, 'MIN-0410D', 'CSL-1', NULL, NULL);
+(1, '---', 'SL-193', NULL, NULL),
+(2, '---', 'SL-194', NULL, NULL),
+(3, '---', 'SL-195', NULL, NULL),
+(4, '---', 'SL-196', NULL, NULL),
+(5, '---', 'SL-197', NULL, NULL),
+(6, '---', 'SL-198', NULL, NULL),
+(7, '---', 'SL-199', NULL, NULL),
+(8, '---', 'SL-200', NULL, NULL),
+(9, '---', 'BC-7', NULL, NULL),
+(10, '---', 'CSL-1', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -666,7 +640,7 @@ ALTER TABLE `models`
 -- AUTO_INCREMENT for table `slicing_data_area1`
 --
 ALTER TABLE `slicing_data_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area2`
@@ -678,37 +652,37 @@ ALTER TABLE `slicing_data_area2`
 -- AUTO_INCREMENT for table `slicing_data_area3`
 --
 ALTER TABLE `slicing_data_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area4`
 --
 ALTER TABLE `slicing_data_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area1`
 --
 ALTER TABLE `slicing_logs_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area2`
 --
 ALTER TABLE `slicing_logs_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area3`
 --
 ALTER TABLE `slicing_logs_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area4`
 --
 ALTER TABLE `slicing_logs_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `slicing_model_area1`

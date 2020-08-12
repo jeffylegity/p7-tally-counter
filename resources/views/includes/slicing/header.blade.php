@@ -76,8 +76,11 @@
       }
   </style> --}}
   <style>
+     th{
+        border:2.5px solid #c1c1c1;
+     }
      td{
-        border:10px solid black;
+        border:2.5px solid #c1c1c1;
      }
      h4{
          white-space:nowrap;
