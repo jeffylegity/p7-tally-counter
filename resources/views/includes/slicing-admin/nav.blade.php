@@ -48,7 +48,7 @@
                      <li>              
                         <a href="{{route('admin.home')}}" class="waves-effect" ><span> Area 1 </span> </a>
                      </li>
-                     <li>              
+                     {{-- <li>              
                         <a href="{{route('admin.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
                      <li>              
@@ -56,7 +56,7 @@
                      </li>
                      <li>              
                         <a href="{{route('admin.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
-                     </li>
+                     </li> --}}
                   </ul>
               </li>
               <li class="has_sub">
@@ -65,7 +65,7 @@
                      <li>              
                         <a href="{{route('admin.records.area1')}}" class="waves-effect" ><span> Area 1 </span> </a>
                      </li>
-                     <li>              
+                     {{-- <li>              
                         <a href="{{route('admin.records.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
                      <li>              
@@ -73,7 +73,7 @@
                      </li>
                      <li>              
                         <a href="{{route('admin.records.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
-                     </li>
+                     </li> --}}
                   </ul>
                </li>
                <li class="has_sub">
@@ -82,7 +82,7 @@
                      <li>              
                         <a href="{{route('admin.models.area1')}}" class="waves-effect" ><span> Area 1 </span> </a>
                      </li>
-                     <li>              
+                     {{-- <li>              
                         <a href="{{route('admin.models.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
                      <li>              
@@ -90,7 +90,7 @@
                      </li>
                      <li>              
                         <a href="{{route('admin.models.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
-                     </li>
+                     </li> --}}
                   </ul>
                </li>
             </ul>

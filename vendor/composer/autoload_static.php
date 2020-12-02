@@ -426,6 +426,8 @@ class ComposerStaticInitd24f4ba6a141cf55d9584ac5956c7518
     );
 
     public static $classMap = array (
+        'App\\Console\\Commands\\GenerateDataE' => __DIR__ . '/../..' . '/app/Console/Commands/GenerateDataE.php',
+        'App\\Console\\Commands\\GenerateDataF' => __DIR__ . '/../..' . '/app/Console/Commands/GenerateDataF.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',

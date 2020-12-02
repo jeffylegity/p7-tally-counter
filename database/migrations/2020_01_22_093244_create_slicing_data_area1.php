@@ -16,30 +16,40 @@ class CreateSlicingDataArea1 extends Migration
         Schema::create('slicing_data_area1', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('sl166_target')->nullable();
-            $table->string('sl167_target')->nullable();
-            $table->string('sl168_target')->nullable();
-            $table->string('sl169_target')->nullable();
-            $table->string('sl170_target')->nullable();
+            $table->string('sl88_target')->nullable();
+            $table->string('sl90_target')->nullable();
+            $table->string('sl89_target')->nullable();
+            $table->string('sl93_target')->nullable();
+            $table->string('sl91_target')->nullable();
+            $table->string('sl94_target')->nullable();
+            $table->string('sl92_target')->nullable();
+            $table->string('sl95_target')->nullable();
+            $table->string('sl97_target')->nullable();
+            $table->string('sl98_target')->nullable();
+            $table->string('sl102_target')->nullable();
+            $table->string('sl105_target')->nullable();
+            $table->string('sl103_target')->nullable();
+            $table->string('sl104_target')->nullable();
+            $table->string('sl106_target')->nullable();
+            $table->string('sl107_target')->nullable();
 
-            $table->string('sl166_actual')->nullable();
-            $table->string('sl167_actual')->nullable();
-            $table->string('sl168_actual')->nullable();
-            $table->string('sl169_actual')->nullable();
-            $table->string('sl170_actual')->nullable();
+            $table->string('sl88_model')->nullable();
+            $table->string('sl90_model')->nullable();
+            $table->string('sl89_model')->nullable();
+            $table->string('sl93_model')->nullable();
+            $table->string('sl91_model')->nullable();
+            $table->string('sl94_model')->nullable();
+            $table->string('sl92_model')->nullable();
+            $table->string('sl95_model')->nullable();
+            $table->string('sl97_model')->nullable();
+            $table->string('sl98_model')->nullable();
+            $table->string('sl102_model')->nullable();
+            $table->string('sl105_model')->nullable();
+            $table->string('sl103_model')->nullable();
+            $table->string('sl104_model')->nullable();
+            $table->string('sl106_model')->nullable();
+            $table->string('sl107_model')->nullable();
 
-            $table->string('sl166_test_block')->nullable();
-            $table->string('sl167_test_block')->nullable();
-            $table->string('sl168_test_block')->nullable();
-            $table->string('sl169_test_block')->nullable();
-            $table->string('sl170_test_block')->nullable();
-
-            $table->string('sl166_model')->nullable();
-            $table->string('sl167_model')->nullable();
-            $table->string('sl168_model')->nullable();
-            $table->string('sl169_model')->nullable();
-            $table->string('sl170_model')->nullable();
-            
             $table->dateTime('date_generated')->nullable();
             $table->string('shift')->nullable();
             $table->boolean('data_stored')->nullable();

@@ -14,7 +14,7 @@
    <center>
       <h4 style="font-size:200%;white-space:nowrap;">
          <b>
-            @foreach($eShiftdate = getFshiftLatestArea1(); as $shift)
+            @foreach($fShiftdate = getFshiftLatestArea1(); as $shift)
              (Area 1 - {{$shift->shift}} Shift / {{Carbon\Carbon::parse($shift->date_generated)->format('M d, Y')}})
             @endforeach
          </b>
@@ -38,8 +38,8 @@
                     </thead>
                     <tbody>
                         @foreach ($record as $data)
-                        <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-166</b></h4></td>
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-88</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
                                  <b>
@@ -48,35 +48,35 @@
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl166_target}}
+                                    {{$data->sl88_target}}
                                  </b>
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
-                                 @if (intval($data->sl166_actual) >= intval($data->sl166_target))
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl88_actual) >= intval($data->sl88_target))
                                  <b>
-                                    {{$data->sl166_actual}}
+                                    {{$data->sl88_actual}}
                                  </b>
                                  @else
                                  <b style="color:#ff5b5b;">
-                                    {{$data->sl166_actual}}
+                                    {{$data->sl88_actual}}
                                  </b>
                                  @endif
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl166_test_block}}
+                                    {{$data->sl88_test_block}}
                                  </b>
                               </h4>
                            </td>
                         </tr>   
-                        <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-167</b></h4></td>
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-90</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
                                  <b>
@@ -85,35 +85,35 @@
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl167_target}}
+                                    {{$data->sl90_target}}
                                  </b>
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
-                                 @if (intval($data->sl167_actual) >= intval($data->sl167_target))
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl90_actual) >= intval($data->sl90_target))
                                  <b>
-                                    {{$data->sl167_actual}}
+                                    {{$data->sl90_actual}}
                                  </b>
                                  @else
                                  <b style="color:#ff5b5b;">
-                                    {{$data->sl167_actual}}
+                                    {{$data->sl90_actual}}
                                  </b>
                                  @endif
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl167_test_block}}
+                                    {{$data->sl90_test_block}}
                                  </b>
                               </h4>
                            </td>
                         </tr> 
-                        <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-168</b></h4></td>
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-89</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
                                  <b>
@@ -122,35 +122,35 @@
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl168_target}}
+                                    {{$data->sl89_target}}
                                  </b>
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
-                                 @if (intval($data->sl168_actual) >= intval($data->sl168_target))
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl89_actual) >= intval($data->sl89_target))
                                  <b>
-                                    {{$data->sl168_actual}}
+                                    {{$data->sl89_actual}}
                                  </b>
                                  @else
                                  <b style="color:#ff5b5b;">
-                                    {{$data->sl168_actual}}
+                                    {{$data->sl89_actual}}
                                  </b>
                                  @endif
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl168_test_block}}
+                                    {{$data->sl89_test_block}}
                                  </b>
                               </h4>
                            </td>
                         </tr>
-                        <tr style="text-align:center;border-bottom:2px solid black;">
-                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-169</b></h4></td>
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-93</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
                                  <b>
@@ -159,35 +159,35 @@
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl169_target}}
+                                    {{$data->sl93_target}}
                                  </b>
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
-                                 @if (intval($data->sl169_actual) >= intval($data->sl169_target))
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl93_actual) >= intval($data->sl93_target))
                                  <b>
-                                    {{$data->sl169_actual}}
+                                    {{$data->sl93_actual}}
                                  </b>
                                  @else
                                  <b style="color:#ff5b5b;">
-                                    {{$data->sl169_actual}}
+                                    {{$data->sl93_actual}}
                                  </b>
                                  @endif
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl169_test_block}}
+                                    {{$data->sl93_test_block}}
                                  </b>
                               </h4>
                            </td>
                         </tr> 
                         <tr style="text-align:center;">
-                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-170</b></h4></td>
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-91</b></h4></td>
                            <td>
                               <h4 style="font-size:200%;white-space:nowrap;">
                                  <b>
@@ -196,33 +196,440 @@
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl170_target}}
+                                    {{$data->sl91_target}}
                                  </b>
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
-                                 @if (intval($data->sl170_actual) >= intval($data->sl170_target))
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl91_actual) >= intval($data->sl91_target))
                                  <b>
-                                    {{$data->sl170_actual}}
+                                    {{$data->sl91_actual}}
                                  </b>
                                  @else
                                  <b style="color:#ff5b5b;">
-                                    {{$data->sl170_actual}}
+                                    {{$data->sl91_actual}}
                                  </b>
                                  @endif
                               </h4>
                            </td>
                            <td>
-                              <h4 style="font-size:500%">
+                              <h4 style="font-size:200%">
                                  <b>
-                                    {{$data->sl170_test_block}}
+                                    {{$data->sl91_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-94</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(6)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl94_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl94_actual) >= intval($data->sl94_target))
+                                 <b>
+                                    {{$data->sl94_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl94_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl94_test_block}}
                                  </b>
                               </h4>
                            </td>
                         </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-92</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(7)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl92_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl92_actual) >= intval($data->sl92_target))
+                                 <b>
+                                    {{$data->sl92_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl92_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl92_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-95</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(8)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl95_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl95_actual) >= intval($data->sl95_target))
+                                 <b>
+                                    {{$data->sl95_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl95_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl95_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-97</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(9)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl97_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl97_actual) >= intval($data->sl97_target))
+                                 <b>
+                                    {{$data->sl97_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl97_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl97_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-98</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(10)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl98_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl98_actual) >= intval($data->sl98_target))
+                                 <b>
+                                    {{$data->sl98_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl98_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl98_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-102</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(11)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl102_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl102_actual) >= intval($data->sl102_target))
+                                 <b>
+                                    {{$data->sl102_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl102_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl102_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-105</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(12)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl105_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl105_actual) >= intval($data->sl105_target))
+                                 <b>
+                                    {{$data->sl105_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl105_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl105_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-103</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(13)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl103_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl103_actual) >= intval($data->sl103_target))
+                                 <b>
+                                    {{$data->sl103_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl103_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl103_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-104</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(14)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl104_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl104_actual) >= intval($data->sl104_target))
+                                 <b>
+                                    {{$data->sl104_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl104_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl104_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-106</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(15)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl106_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl106_actual) >= intval($data->sl106_target))
+                                 <b>
+                                    {{$data->sl106_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl106_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl106_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>  
+                        <tr style="text-align:center;">
+                           <td><h4 style="font-size:200%;white-space:nowrap;"><b>SL-107</b></h4></td>
+                           <td>
+                              <h4 style="font-size:200%;white-space:nowrap;">
+                                 <b>
+                                    {{getSlModelArea1(16)}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl107_target}}
+                                 </b>
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 @if (intval($data->sl107_actual) >= intval($data->sl107_target))
+                                 <b>
+                                    {{$data->sl107_actual}}
+                                 </b>
+                                 @else
+                                 <b style="color:#ff5b5b;">
+                                    {{$data->sl107_actual}}
+                                 </b>
+                                 @endif
+                              </h4>
+                           </td>
+                           <td>
+                              <h4 style="font-size:200%">
+                                 <b>
+                                    {{$data->sl107_test_block}}
+                                 </b>
+                              </h4>
+                           </td>
+                        </tr>    
                         @endforeach
                     </tbody>
                   </table>

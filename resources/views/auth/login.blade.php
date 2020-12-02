@@ -13,7 +13,7 @@
   <div class="wrapper-page">
     <div class="text-center">
       <img src="assets/images/shinetsu.png.png" alt="Shin-Etsu" style="width: 70%; height:60%;">
-      <h5 class="text-muted m-t-0 font-600">Plant 8 Tally Counter</h5>
+      <h5 class="text-muted m-t-0 font-600">Plant 7 Tally Counter</h5>
     </div><br>
     <div class="m-t-40 card-box">
       <div class="text-center">

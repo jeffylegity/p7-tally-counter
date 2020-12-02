@@ -2,28 +2,37 @@
 use Carbon\Carbon;
 //Slicing Area 1
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 function getLatestArea1(){
-   $get_latest_area1 = DB::table('slicing_data_area1')->orderBy('id','desc')
+   $get_latest_area1 = DB::table('slicing_data_area1')
+   ->join('slicing_actual_area1','slicing_actual_area1.id','=','slicing_data_area1.id')
+   ->join('slicing_test_block_area1','slicing_test_block_area1.id','=','slicing_data_area1.id')
    ->where([
-      'data_stored' => 0
+      'slicing_data_area1.data_stored' => 0
    ])->limit(1)->get();
 
    return $get_latest_area1;
 }
 
 function getEshiftLatestArea1(){
-   $get_e_latest = DB::table('slicing_data_area1')->orderBy('id','desc')
+   $get_e_latest = DB::table('slicing_data_area1')
+   ->join('slicing_actual_area1','slicing_actual_area1.id','=','slicing_data_area1.id')
+   ->join('slicing_test_block_area1','slicing_test_block_area1.id','=','slicing_data_area1.id')
+   ->orderBy('slicing_data_area1.id','desc')
    ->where([
-      'shift'  => 'E'
+      'slicing_data_area1.shift'  => 'E'
    ])->limit(1)->get();
 
    return $get_e_latest;
 }
 
 function getFshiftLatestArea1(){
-   $get_f_latest = DB::table('slicing_data_area1')->orderBy('id','desc')
+   $get_f_latest = DB::table('slicing_data_area1')
+   ->join('slicing_actual_area1','slicing_actual_area1.id','=','slicing_data_area1.id')
+   ->join('slicing_test_block_area1','slicing_test_block_area1.id','=','slicing_data_area1.id')
+   ->orderBy('slicing_data_area1.id','desc')
    ->where([
-      'shift'  => 'F'
+      'slicing_data_area1.shift'  => 'F'
    ])->limit(1)->get();
 
    return $get_f_latest;

@@ -64,11 +64,13 @@ class AdminController extends Controller
    }
 
    public function showRecordsArea1(){
+      
    $records = DB::table('slicing_data_area1')
       ->orderBy('date_generated','desc')->get();
-      return view('pages.admin.area1.admin_records')
+
+   return view('pages.admin.area1.admin_records')
       ->with([
-         'records' => $records,
+         'records'       => $records,
       ]);
    }
 
@@ -110,11 +112,23 @@ class AdminController extends Controller
    $update_plan = DB::table('slicing_data_area1')->select('*')
    ->where(['id'=>$request->input('data_id')])
    ->update([
-      'sl166_target'=>$request->input('sl166_target'),
-      'sl167_target'=>$request->input('sl167_target'),
-      'sl168_target'=>$request->input('sl168_target'),
-      'sl169_target'=>$request->input('sl169_target'),
-      'sl170_target'=>$request->input('sl170_target'),
+      'sl88_target'=>$request->input('sl88_target'),
+      'sl90_target'=>$request->input('sl90_target'),
+      'sl89_target'=>$request->input('sl89_target'),
+      'sl93_target'=>$request->input('sl93_target'),
+      'sl91_target'=>$request->input('sl91_target'),
+      'sl94_target'=>$request->input('sl94_target'),
+      'sl92_target'=>$request->input('sl92_target'),
+      'sl95_target'=>$request->input('sl95_target'),
+      'sl97_target'=>$request->input('sl97_target'),
+      'sl98_target'=>$request->input('sl98_target'),
+      'sl102_target'=>$request->input('sl102_target'),
+      'sl105_target'=>$request->input('sl105_target'),
+      'sl103_target'=>$request->input('sl103_target'),
+      'sl104_target'=>$request->input('sl104_target'),
+      'sl106_target'=>$request->input('sl106_target'),
+      'sl107_target'=>$request->input('sl107_target'),
+
       ]);
 
       if (!$update_plan) {
