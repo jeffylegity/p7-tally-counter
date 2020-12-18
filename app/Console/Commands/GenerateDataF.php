@@ -119,6 +119,86 @@ class GenerateDataF extends Command
       );
 
       DB::table('slicing_test_block_area1')->insert($area1_test_block);
+
+      //area 2 data structure
+      DB::table('slicing_data_area2')        ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+      DB::table('slicing_actual_area2')      ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+      DB::table('slicing_test_block_area2')  ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+
+      $area2_target = array(
+
+         'sl52_target'      => 0,
+         'sl55_target'      => 0,
+         'sl53_target'      => 0,
+         'sl60_target'      => 0,
+         'sl114_target'      => 0,
+         'sl113_target'      => 0,
+         'sl117_target'      => 0,
+         'sl122_target'      => 0,
+         'sl123_target'      => 0,
+         'sl121_target'      => 0,
+         'sl141_target'     => 0,
+         'sl139_target'     => 0,
+         'sl142_target'     => 0,
+         'sl140_target'     => 0,
+         'sl187_target'     => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+
+      DB::table('slicing_data_area2')->insert($area2_target);
+
+      $area2_actual = array(
+
+         'sl52_actual'      => 0,
+         'sl55_actual'      => 0,
+         'sl53_actual'      => 0,
+         'sl60_actual'      => 0,
+         'sl114_actual'      => 0,
+         'sl113_actual'      => 0,
+         'sl117_actual'      => 0,
+         'sl122_actual'      => 0,
+         'sl123_actual'      => 0,
+         'sl121_actual'      => 0,
+         'sl141_actual'     => 0,
+         'sl139_actual'     => 0,
+         'sl142_actual'     => 0,
+         'sl140_actual'     => 0,
+         'sl187_actual'     => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+      
+      DB::table('slicing_actual_area2')->insert($area2_actual);
+
+      $area2_test_block = array(
+
+         'sl52_test_block'  => 0,
+         'sl55_test_block'  => 0,
+         'sl53_test_block'  => 0,
+         'sl60_test_block'  => 0,
+         'sl114_test_block'  => 0,
+         'sl113_test_block'  => 0,
+         'sl117_test_block'  => 0,
+         'sl122_test_block'  => 0,
+         'sl123_test_block'  => 0,
+         'sl121_test_block'  => 0,
+         'sl141_test_block' => 0,
+         'sl139_test_block' => 0,
+         'sl142_test_block' => 0,
+         'sl140_test_block' => 0,
+         'sl187_test_block' => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+
+      DB::table('slicing_test_block_area2')->insert($area2_test_block);
       
    }  
     }

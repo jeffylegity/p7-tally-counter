@@ -27,10 +27,10 @@ class CreateSlicingActualArea2 extends Migration
             $table->string('sl123_actual')->nullable();
             $table->string('sl121_actual')->nullable();
             $table->string('sl141_actual')->nullable();
-            $table->string('sl139_target')->nullable();
-            $table->string('sl142_target')->nullable();
-            $table->string('sl140_target')->nullable();
-            $table->string('sl187_target')->nullable();
+            $table->string('sl139_actual')->nullable();
+            $table->string('sl142_actual')->nullable();
+            $table->string('sl140_actual')->nullable();
+            $table->string('sl187_actual')->nullable();
 
             $table->dateTime('date_generated')->nullable();
             $table->string('shift')->nullable();

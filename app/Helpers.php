@@ -50,27 +50,35 @@ function getSlModelArea1($sl_no){
 //Slicing Area 2
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getLatestArea2(){
-   $get_latest_area2 = DB::table('slicing_data_area2')->orderBy('id','desc')
+   $get_latest_area2 = DB::table('slicing_data_area2')
+   ->join('slicing_actual_area2','slicing_actual_area2.id','=','slicing_data_area2.id')
+   ->join('slicing_test_block_area2','slicing_test_block_area2.id','=','slicing_data_area2.id')
    ->where([
-      'data_stored' => 0
+      'slicing_data_area2.data_stored' => 0
    ])->limit(1)->get();
 
    return $get_latest_area2;
 }
 
 function getEshiftLatestArea2(){
-   $get_e_latest = DB::table('slicing_data_area2')->orderBy('id','desc')
+   $get_e_latest = DB::table('slicing_data_area2')
+   ->join('slicing_actual_area2','slicing_actual_area2.id','=','slicing_data_area2.id')
+   ->join('slicing_test_block_area2','slicing_test_block_area2.id','=','slicing_data_area2.id')
+   ->orderBy('slicing_data_area2.id','desc')
    ->where([
-      'shift'  => 'E'
+      'slicing_data_area2.shift'  => 'E'
    ])->limit(1)->get();
 
    return $get_e_latest;
 }
 
 function getFshiftLatestArea2(){
-   $get_f_latest = DB::table('slicing_data_area2')->orderBy('id','desc')
+   $get_f_latest = DB::table('slicing_data_area2')
+   ->join('slicing_actual_area2','slicing_actual_area2.id','=','slicing_data_area2.id')
+   ->join('slicing_test_block_area2','slicing_test_block_area2.id','=','slicing_data_area2.id')
+   ->orderBy('slicing_data_area2.id','desc')
    ->where([
-      'shift'  => 'F'
+      'slicing_data_area2.shift'  => 'F'
    ])->limit(1)->get();
 
    return $get_f_latest;

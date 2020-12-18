@@ -185,11 +185,12 @@
                      </div>    
                   </div><br> --}}
                   {{-- <hr style="border:1px solid black;"> --}}
-                  <div class="col-lg-12">
-                     <h3><b>Actual</b></h3>
-                  </div>
+                  <hr style="border:1px solid black;">
                   <div class="row">
-                     <div class="col-lg-2">
+                     <div class="col-lg-2">  
+                        <h3><b>Actual</b></h3>
+                     </div>
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(1)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl88_actual}}</b></h2>
@@ -204,7 +205,7 @@
                            <h4><b>SL-88</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(2)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl90_actual}}</b></h2>
@@ -279,7 +280,7 @@
                            <h4><b>SL-94</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(7)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl92_actual}}</b></h2>
@@ -294,7 +295,7 @@
                            <h4><b>SL-92</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(8)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl95_actual}}</b></h2>
@@ -309,7 +310,7 @@
                            <h4><b>SL-95</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(9)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl97_actual}}</b></h2>
@@ -324,7 +325,7 @@
                            <h4><b>SL-97</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(10)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl98_actual}}</b></h2>
@@ -339,6 +340,7 @@
                            <h4><b>SL-98</b></h4>
                         </center>
                      </div>
+                     <div class="col-lg-2"></div>
                      <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(11)}}</b></h4>
@@ -399,7 +401,7 @@
                            <h4><b>SL-104</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(15)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl106_actual}}</b></h2>
@@ -414,7 +416,7 @@
                            <h4><b>SL-106</b></h4>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>{{getSlModelArea1(16)}}</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl107_actual}}</b></h2>
@@ -430,12 +432,12 @@
                         </center>
                      </div> 
                   </div><br>
-                  <hr style="border: 1px solid black;">
-                  <div class="col-lg-12">
-                     <h3><b>Test Block</b></h3>
-                  </div>
+                  <hr style="border:1px solid black;">
                   <div class="row">
-                     <div class="col-lg-2">
+                     <div class="col-lg-2">  
+                        <h3><b>Testblock</b></h3>
+                     </div>
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-88</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl88_test_block}}</b></h2>
@@ -449,7 +451,7 @@
                            </a>
                         </center>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-90</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl90_test_block}}</b></h2>
@@ -521,7 +523,7 @@
                         </center>
                         <br><br>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-92</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl92_test_block}}</b></h2>
@@ -536,7 +538,7 @@
                         </center>
                         <br><br>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-95</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl95_test_block}}</b></h2>
@@ -551,7 +553,7 @@
                         </center>
                         <br><br>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-97</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl97_test_block}}</b></h2>
@@ -566,7 +568,7 @@
                         </center>
                         <br><br>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-98</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl98_test_block}}</b></h2>
@@ -581,6 +583,7 @@
                         </center>
                         <br><br>
                      </div>
+                     <div class="col-lg-2"></div>
                      <div class="col-lg-1">
                         <center>
                            <h4><b>SL-102</b></h4>
@@ -641,7 +644,7 @@
                         </center>
                         <br><br>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-106</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl106_test_block}}</b></h2>
@@ -656,7 +659,7 @@
                         </center>
                         <br><br>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-1">
                         <center>
                            <h4><b>SL-107</b></h4>
                            <h2 style="font-size:400%"><b>{{$data->sl107_test_block}}</b></h2>

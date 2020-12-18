@@ -48,10 +48,10 @@
                      <li>              
                         <a href="{{route('admin.home')}}" class="waves-effect" ><span> Area 1 </span> </a>
                      </li>
-                     {{-- <li>              
+                     <li>              
                         <a href="{{route('admin.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
-                     <li>              
+                     {{-- <li>              
                         <a href="{{route('admin.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
                      <li>              
@@ -65,10 +65,10 @@
                      <li>              
                         <a href="{{route('admin.records.area1')}}" class="waves-effect" ><span> Area 1 </span> </a>
                      </li>
-                     {{-- <li>              
+                     <li>              
                         <a href="{{route('admin.records.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
-                     <li>              
+                     {{-- <li>              
                         <a href="{{route('admin.records.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
                      <li>              
@@ -82,10 +82,10 @@
                      <li>              
                         <a href="{{route('admin.models.area1')}}" class="waves-effect" ><span> Area 1 </span> </a>
                      </li>
-                     {{-- <li>              
+                     <li>              
                         <a href="{{route('admin.models.area2')}}" class="waves-effect" ><span> Area 2 </span> </a>
                      </li>
-                     <li>              
+                     {{-- <li>              
                         <a href="{{route('admin.models.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
                      <li>              

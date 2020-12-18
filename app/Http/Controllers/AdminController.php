@@ -144,45 +144,65 @@ class AdminController extends Controller
 //---------------------------------------------------------------------------------------------------------------------------------------------------
    public function generateSlicingRecordArea2(){
       $data = array(
-         'sl156_actual'        =>0,
-         'sl156_target'        =>0,
-         'sl156_test_block'    =>0,
+         'sl52_actual'        =>0,
+         'sl52_target'        =>0,
+         'sl52_test_block'    =>0,
 
-         'sl161_actual'        =>0,
-         'sl161_target'        =>0,
-         'sl161_test_block'    =>0,
+         'sl55_actual'        =>0,
+         'sl55_target'        =>0,
+         'sl55_test_block'    =>0,
 
-         'sl162_actual'        =>0,
-         'sl162_target'        =>0,
-         'sl162_test_block'    =>0,
+         'sl53_actual'        =>0,
+         'sl53_target'        =>0,
+         'sl53_test_block'    =>0,
 
-         'sl163_actual'        =>0,
-         'sl163_target'        =>0,
-         'sl163_test_block'    =>0,
+         'sl60_actual'        =>0,
+         'sl60_target'        =>0,
+         'sl60_test_block'    =>0,
 
-         'sl164_actual'        =>0,
-         'sl164_target'        =>0,
-         'sl164_test_block'    =>0,
+         'sl114_actual'        =>0,
+         'sl114_target'        =>0,
+         'sl114_test_block'    =>0,
 
-         'sl171_actual'        =>0,
-         'sl171_target'        =>0,
-         'sl171_test_block'    =>0,
+         'sl113_actual'        =>0,
+         'sl113_target'        =>0,
+         'sl113_test_block'    =>0,
 
-         'sl172_actual'        =>0,
-         'sl172_target'        =>0,
-         'sl172_test_block'    =>0,
+         'sl117_actual'        =>0,
+         'sl117_target'        =>0,
+         'sl117_test_block'    =>0,
 
-         'sl179_actual'        =>0,
-         'sl179_target'        =>0,
-         'sl179_test_block'    =>0,
+         'sl122_actual'        =>0,
+         'sl122_target'        =>0,
+         'sl122_test_block'    =>0,
 
-         'sl180_actual'        =>0,
-         'sl180_target'        =>0,
-         'sl180_test_block'    =>0,
+         'sl123_actual'        =>0,
+         'sl123_target'        =>0,
+         'sl123_test_block'    =>0,
 
-         'sl181_actual'        =>0,
-         'sl181_target'        =>0,
-         'sl181_test_block'    =>0,
+         'sl121_actual'        =>0,
+         'sl121_target'        =>0,
+         'sl121_test_block'    =>0,
+
+         'sl141_actual'        =>0,
+         'sl141_target'        =>0,
+         'sl141_test_block'    =>0,
+
+         'sl139_actual'        =>0,
+         'sl139_target'        =>0,
+         'sl139_test_block'    =>0,
+
+         'sl142_actual'        =>0,
+         'sl142_target'        =>0,
+         'sl142_test_block'    =>0,
+
+         'sl140_actual'        =>0,
+         'sl140_target'        =>0,
+         'sl140_test_block'    =>0,
+
+         'sl187_actual'        =>0,
+         'sl187_target'        =>0,
+         'sl187_test_block'    =>0,
          
          'date_generated'    =>now(),
          'shift'             =>getShift(),
@@ -259,16 +279,21 @@ class AdminController extends Controller
    $update_plan = DB::table('slicing_data_area2')->select('*')
       ->where(['id'=>$request->input('data_id')])
       ->update([
-         'sl156_target'=>$request->input('sl156_target'),
-         'sl161_target'=>$request->input('sl161_target'),
-         'sl162_target'=>$request->input('sl162_target'),
-         'sl163_target'=>$request->input('sl163_target'),
-         'sl164_target'=>$request->input('sl164_target'),
-         'sl171_target'=>$request->input('sl171_target'),
-         'sl172_target'=>$request->input('sl172_target'),
-         'sl179_target'=>$request->input('sl179_target'),
-         'sl180_target'=>$request->input('sl180_target'),
-         'sl181_target'=>$request->input('sl181_target'),
+         'sl52_target'=>$request->input('sl52_target'),
+         'sl55_target'=>$request->input('sl55_target'),
+         'sl53_target'=>$request->input('sl53_target'),
+         'sl60_target'=>$request->input('sl60_target'),
+         'sl114_target'=>$request->input('sl114_target'),
+         'sl113_target'=>$request->input('sl113_target'),
+         'sl117_target'=>$request->input('sl117_target'),
+         'sl122_target'=>$request->input('sl122_target'),
+         'sl123_target'=>$request->input('sl123_target'),
+         'sl121_target'=>$request->input('sl121_target'),
+         'sl141_target'=>$request->input('sl141_target'),
+         'sl139_target'=>$request->input('sl139_target'),
+         'sl142_target'=>$request->input('sl142_target'),
+         'sl140_target'=>$request->input('sl140_target'),
+         'sl187_target'=>$request->input('sl187_target'),
       ]);
 
       if (!$update_plan) {
