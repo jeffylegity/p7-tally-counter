@@ -29,6 +29,10 @@ class MyCustomAuthController extends Controller
                case 4:
                   return redirect()->route('user.home.area4');
                   break;
+               
+               case 5:
+                  return redirect()->route('user.home.area5');
+                  break;
             }
          } elseif (auth()->user()->role == 1) {
 

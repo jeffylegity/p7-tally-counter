@@ -4,9 +4,9 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 
-class SlicingAdminDataArea4 extends AbstractWidget
+class SlicingAdminDataArea5 extends AbstractWidget
 {
-   public $reloadTimeout = 10;
+    public $reloadTimeout = 10;
     /**
      * The configuration array.
      *
@@ -22,9 +22,9 @@ class SlicingAdminDataArea4 extends AbstractWidget
     {
         //
 
-        return view('widgets.slicing_admin_data_area4', [
+        return view('widgets.slicing_admin_data_area5', [
             'config'    => $this->config,
-            'record'    =>getLatestArea4(),
+            'record'    =>getLatestArea5(),
         ]);
     }
 

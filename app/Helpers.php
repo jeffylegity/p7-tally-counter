@@ -142,25 +142,35 @@ function getSlModelArea3($sl_no){
 //Slicing Area 4
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 function getLatestArea4(){
-   $get_latest_area4 = DB::table('slicing_data_area4')->orderBy('id','desc')
-   ->limit(1)->get();
+   $get_latest_area4 = DB::table('slicing_data_area4')
+   ->join('slicing_actual_area4','slicing_actual_area4.id','=','slicing_data_area4.id')
+   ->join('slicing_test_block_area4','slicing_test_block_area4.id','=','slicing_data_area4.id')
+   ->where([
+      'slicing_data_area4.data_stored' => 0
+   ])->limit(1)->get();
 
    return $get_latest_area4;
 }
 
 function getEshiftLatestArea4(){
-   $get_e_latest = DB::table('slicing_data_area4')->orderBy('id','desc')
+   $get_e_latest = DB::table('slicing_data_area4')
+   ->join('slicing_actual_area4','slicing_actual_area4.id','=','slicing_data_area4.id')
+   ->join('slicing_test_block_area4','slicing_test_block_area4.id','=','slicing_data_area4.id')
+   ->orderBy('slicing_data_area4.id','desc')
    ->where([
-      'shift'  => 'E'
+      'slicing_data_area4.shift'  => 'E'
    ])->limit(1)->get();
 
    return $get_e_latest;
 }
 
 function getFshiftLatestArea4(){
-   $get_f_latest = DB::table('slicing_data_area4')->orderBy('id','desc')
+   $get_f_latest = DB::table('slicing_data_area4')
+   ->join('slicing_actual_area4','slicing_actual_area4.id','=','slicing_data_area4.id')
+   ->join('slicing_test_block_area4','slicing_test_block_area4.id','=','slicing_data_area4.id')
+   ->orderBy('slicing_data_area4.id','desc')
    ->where([
-      'shift'  => 'F'
+      'slicing_data_area4.shift'  => 'F'
    ])->limit(1)->get();
 
    return $get_f_latest;
@@ -175,6 +185,51 @@ function getSlModelArea4($sl_no){
    }
 }
 
+//Slicing Area 5
+//-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+function getLatestArea5(){
+   $get_latest_area5 = DB::table('slicing_data_area5')
+   ->join('slicing_actual_area5','slicing_actual_area5.id','=','slicing_data_area5.id')
+   ->join('slicing_test_block_area5','slicing_test_block_area5.id','=','slicing_data_area5.id')
+   ->where([
+      'slicing_data_area5.data_stored' => 0
+   ])->limit(1)->get();
+
+   return $get_latest_area5;
+}
+
+function getEshiftLatestArea5(){
+   $get_e_latest = DB::table('slicing_data_area5')
+   ->join('slicing_actual_area5','slicing_actual_area5.id','=','slicing_data_area5.id')
+   ->join('slicing_test_block_area5','slicing_test_block_area5.id','=','slicing_data_area5.id')
+   ->orderBy('slicing_data_area5.id','desc')
+   ->where([
+      'slicing_data_area5.shift'  => 'E'
+   ])->limit(1)->get();
+
+   return $get_e_latest;
+}
+
+function getFshiftLatestArea5(){
+   $get_f_latest = DB::table('slicing_data_area5')
+   ->join('slicing_actual_area5','slicing_actual_area5.id','=','slicing_data_area5.id')
+   ->join('slicing_test_block_area5','slicing_test_block_area5.id','=','slicing_data_area5.id')
+   ->orderBy('slicing_data_area5.id','desc')
+   ->where([
+      'slicing_data_area5.shift'  => 'F'
+   ])->limit(1)->get();
+
+   return $get_f_latest;
+}
+
+function getSlModelArea5($sl_no){
+   $get_model = DB::table('slicing_model_area5')->select('*')
+      ->where(['id' => $sl_no])
+      ->get();
+   foreach ($get_model as $model) {
+      return $model->model_name;
+   }
+}
 
 //Get Shift function
 //-----------------------------------------------------------------------------------------------------------------------------------------------------------------

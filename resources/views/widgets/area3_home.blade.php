@@ -1,7 +1,7 @@
 @if (getLatestArea3() == '[]')
 <div class="col-xl-12">
    <div class="alert alert-danger" style="background-color:#034ea2;color:white;text-align:center;">
-      <h1>P8 1st Machining - Area 3</h1>
+      <h1>P7 Machining - Area 3</h1>
    </div>
 </div>
 <div class="col-xl-12">
@@ -403,10 +403,10 @@
                            <h2 style="font-size:400%"><b>{{$data->sl109_test_block}}</b></h2>
                         </center>
                         <center>
-                           <a href="{{route('dec_actual',['col_selector'=>'sl109_test_block','machine_no'=>'SL-109','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-danger btn-sm">
+                           <a href="{{route('dec_actual',['col_selector'=>'sl109_test_block','machine_no'=>'SL-109','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(11)])}}" class="btn btn-danger btn-sm">
                               <i class="mdi mdi-minus"></i>
                            </a>
-                           <a href="{{route('inc_actual',['col_selector'=>'sl109_test_block','machine_no'=>'SL-109','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-primary btn-sm">
+                           <a href="{{route('inc_actual',['col_selector'=>'sl109_test_block','machine_no'=>'SL-109','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(11)])}}" class="btn btn-primary btn-sm">
                               <i class="mdi mdi-plus"></i>
                            </a>
                            <h5><b>SL-109</b></h5>
@@ -417,10 +417,10 @@
                            <h2 style="font-size:400%"><b>{{$data->sl112_test_block}}</b></h2>
                         </center>
                         <center>
-                           <a href="{{route('dec_actual',['col_selector'=>'sl112_test_block','machine_no'=>'SL-112','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-danger btn-sm">
+                           <a href="{{route('dec_actual',['col_selector'=>'sl112_test_block','machine_no'=>'SL-112','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(12)])}}" class="btn btn-danger btn-sm">
                               <i class="mdi mdi-minus"></i>
                            </a>
-                           <a href="{{route('inc_actual',['col_selector'=>'sl112_test_block','machine_no'=>'SL-112','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-primary btn-sm">
+                           <a href="{{route('inc_actual',['col_selector'=>'sl112_test_block','machine_no'=>'SL-112','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(12)])}}" class="btn btn-primary btn-sm">
                               <i class="mdi mdi-plus"></i>
                            </a>
                            <h5><b>SL-112</b></h5>
@@ -431,10 +431,10 @@
                            <h2 style="font-size:400%"><b>{{$data->sl110_test_block}}</b></h2>
                         </center>
                         <center>
-                           <a href="{{route('dec_actual',['col_selector'=>'sl110_test_block','machine_no'=>'SL-110','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-danger btn-sm">
+                           <a href="{{route('dec_actual',['col_selector'=>'sl110_test_block','machine_no'=>'SL-110','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(13)])}}" class="btn btn-danger btn-sm">
                               <i class="mdi mdi-minus"></i>
                            </a>
-                           <a href="{{route('inc_actual',['col_selector'=>'sl110_test_block','machine_no'=>'SL-110','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-primary btn-sm">
+                           <a href="{{route('inc_actual',['col_selector'=>'sl110_test_block','machine_no'=>'SL-110','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(13)])}}" class="btn btn-primary btn-sm">
                               <i class="mdi mdi-plus"></i>
                            </a>
                            <h5><b>SL-110</b></h5>
@@ -445,10 +445,10 @@
                            <h2 style="font-size:400%"><b>{{$data->sl143_test_block}}</b></h2>
                         </center>
                         <center>
-                           <a href="{{route('dec_actual',['col_selector'=>'sl143_test_block','machine_no'=>'SL-143','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-danger btn-sm">
+                           <a href="{{route('dec_actual',['col_selector'=>'sl143_test_block','machine_no'=>'SL-143','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(14)])}}" class="btn btn-danger btn-sm">
                               <i class="mdi mdi-minus"></i>
                            </a>
-                           <a href="{{route('inc_actual',['col_selector'=>'sl143_test_block','machine_no'=>'SL-143','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-primary btn-sm">
+                           <a href="{{route('inc_actual',['col_selector'=>'sl143_test_block','machine_no'=>'SL-143','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(14)])}}" class="btn btn-primary btn-sm">
                               <i class="mdi mdi-plus"></i>
                            </a>
                            <h5><b>SL-143</b></h5>
@@ -459,10 +459,10 @@
                            <h2 style="font-size:400%"><b>{{$data->sl108_test_block}}</b></h2>
                         </center>
                         <center>
-                           <a href="{{route('dec_actual',['col_selector'=>'sl108_test_block','machine_no'=>'SL-108','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-danger btn-sm">
+                           <a href="{{route('dec_actual',['col_selector'=>'sl108_test_block','machine_no'=>'SL-108','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(15)])}}" class="btn btn-danger btn-sm">
                               <i class="mdi mdi-minus"></i>
                            </a>
-                           <a href="{{route('inc_actual',['col_selector'=>'sl108_test_block','machine_no'=>'SL-108','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(10)])}}" class="btn btn-primary btn-sm">
+                           <a href="{{route('inc_actual',['col_selector'=>'sl108_test_block','machine_no'=>'SL-108','type'=>'test_block','area'=>'2','model'=>getSlModelArea3(15)])}}" class="btn btn-primary btn-sm">
                               <i class="mdi mdi-plus"></i>
                            </a>
                            <h5><b>SL-108</b></h5>

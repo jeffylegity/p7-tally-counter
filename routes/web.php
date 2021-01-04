@@ -16,6 +16,7 @@ Route::get('slicing/common/area1','CommonPageController@slicingCommonPageArea1')
 Route::get('slicing/common/area2','CommonPageController@slicingCommonPageArea2')->name('slicing.common.area2');
 Route::get('slicing/common/area3','CommonPageController@slicingCommonPageArea3')->name('slicing.common.area3');
 Route::get('slicing/common/area4','CommonPageController@slicingCommonPageArea4')->name('slicing.common.area4');
+Route::get('slicing/common/area5','CommonPageController@slicingCommonPageArea5')->name('slicing.common.area5');
 
 Route::get('clear_cache','OptController@clearCache')->name('cache.clear');
 Route::get('increment_actual/{col_selector}/{machine_no}/{type}/{area}/{model}', 'UserController@incDataActual')   ->name('inc_actual');
@@ -60,17 +61,27 @@ Route::group(['middleware' => ['is_admin']], function () {
    Route::post('admin/slicing/update_plan/area3', 'AdminController@updatePlanArea3')->name('admin.update_plan.area3');
    Route::get('admin/generate_record/area3', 'AdminController@generateSlicingRecordArea3')->name('admin.generate_record.area3');
    Route::get('admin/save_record/area3/{data_id}', 'AdminController@saveDataArea3')->name('admin.save_record.area3');
-   // //area 4
-   // Route::get('admin/area4', 'HomeController@adminHomeArea4')->name('admin.area4');
-   // Route::get('admin/slicing/records/area4', 'AdminController@showRecordsArea4')->name('admin.records.area4');
-   // Route::get('admin/slicing/logs/area4/{input_id}', 'AdminController@showLogsArea4')->name('admin.logs.area4');
-   // Route::get('admin/slicing/models/area4', 'AdminController@showModelsArea4')->name('admin.models.area4');
-   // Route::post('admin/slicing/update_model_name/area4', 'AdminController@updateModelNameArea4')->name('admin.update_model_name.area4');
-   // Route::post('admin/slicing/update_plan/area4', 'AdminController@updatePlanArea4')->name('admin.update_plan.area4');
-   // Route::get('admin/generate_record/area4', 'AdminController@generateSlicingRecordArea4')->name('admin.generate_record.area4');
-   // Route::get('admin/save_record/area4/{data_id}', 'AdminController@saveDataArea4')->name('admin.save_record.area4');
 
-   
+   //area 4
+   Route::get('admin/area4', 'HomeController@adminHomeArea4')->name('admin.area4');
+   Route::get('admin/slicing/records/area4', 'AdminController@showRecordsArea4')->name('admin.records.area4');
+   Route::get('admin/slicing/logs/area4/{input_id}', 'AdminController@showLogsArea4')->name('admin.logs.area4');
+   Route::get('admin/slicing/models/area4', 'AdminController@showModelsArea4')->name('admin.models.area4');
+   Route::post('admin/slicing/update_model_name/area4', 'AdminController@updateModelNameArea4')->name('admin.update_model_name.area4');
+   Route::post('admin/slicing/update_plan/area4', 'AdminController@updatePlanArea4')->name('admin.update_plan.area4');
+   Route::get('admin/generate_record/area4', 'AdminController@generateSlicingRecordArea4')->name('admin.generate_record.area4');
+   Route::get('admin/save_record/area4/{data_id}', 'AdminController@saveDataArea4')->name('admin.save_record.area4');
+
+   //area 5
+   Route::get('admin/area5', 'HomeController@adminHomeArea5')->name('admin.area5');
+   Route::get('admin/slicing/records/area5', 'AdminController@showRecordsArea5')->name('admin.records.area5');
+   Route::get('admin/slicing/logs/area5/{input_id}', 'AdminController@showLogsArea5')->name('admin.logs.area5');
+   Route::get('admin/slicing/models/area5', 'AdminController@showModelsArea5')->name('admin.models.area5');
+   Route::post('admin/slicing/update_model_name/area5', 'AdminController@updateModelNameArea5')->name('admin.update_model_name.area5');
+   Route::post('admin/slicing/update_plan/area5', 'AdminController@updatePlanArea5')->name('admin.update_plan.area5');
+   Route::get('admin/generate_record/area5', 'AdminController@generateSlicingRecordArea5')->name('admin.generate_record.area5');
+   Route::get('admin/save_record/area5/{data_id}', 'AdminController@saveDataArea5')->name('admin.save_record.area5');
+
    
 });
 
@@ -92,11 +103,19 @@ Route::group(['middleware' => ['is_area3']], function () {
    Route::get('user/slicing-input/area3', 'HomeController@userHomeArea3')->name('user.home.area3');
 });
 
-// //role == null
-// //area 4
-// Route::group(['middleware' => ['is_area4']], function () {
-//    Route::get('user/slicing-input/area4', 'HomeController@userHomeArea4')->name('user.home.area4');
-// });
+//role == null
+//area 4
+Route::group(['middleware' => ['is_area4']], function () {
+   Route::get('user/slicing-input/area4', 'HomeController@userHomeArea4')->name('user.home.area4');
+});
+
+//role == null
+//area 5
+Route::group(['middleware' => ['is_area5']], function () {
+   Route::get('user/slicing-input/area5', 'HomeController@userHomeArea5')->name('user.home.area5');
+});
+
+
 
 
 

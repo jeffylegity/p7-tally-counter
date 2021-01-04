@@ -441,10 +441,10 @@
                         <td>
                            <h4 style="font-size:200%">
                               <b>
-                                 @if (getSlModelArea3(10) == null)
+                                 @if (getSlModelArea3(11) == null)
                                     N/A
                                  @else 
-                                    {{getSlModelArea3(10)}}
+                                    {{getSlModelArea3(11)}}
                                     
                                  @endif
                               </b>
@@ -483,10 +483,10 @@
                         <td>
                            <h4 style="font-size:200%">
                               <b>
-                                 @if (getSlModelArea3(10) == null)
+                                 @if (getSlModelArea3(12) == null)
                                     N/A
                                  @else 
-                                    {{getSlModelArea3(10)}}
+                                    {{getSlModelArea3(12)}}
                                     
                                  @endif
                               </b>
@@ -525,10 +525,10 @@
                         <td>
                            <h4 style="font-size:200%">
                               <b>
-                                 @if (getSlModelArea3(10) == null)
+                                 @if (getSlModelArea3(13) == null)
                                     N/A
                                  @else 
-                                    {{getSlModelArea3(10)}}
+                                    {{getSlModelArea3(13)}}
                                     
                                  @endif
                               </b>
@@ -567,10 +567,10 @@
                         <td>
                            <h4 style="font-size:200%">
                               <b>
-                                 @if (getSlModelArea3(10) == null)
+                                 @if (getSlModelArea3(14) == null)
                                     N/A
                                  @else 
-                                    {{getSlModelArea3(10)}}
+                                    {{getSlModelArea3(14)}}
                                     
                                  @endif
                               </b>
@@ -609,10 +609,10 @@
                         <td>
                            <h4 style="font-size:200%">
                               <b>
-                                 @if (getSlModelArea3(10) == null)
+                                 @if (getSlModelArea3(15) == null)
                                     N/A
                                  @else 
-                                    {{getSlModelArea3(10)}}
+                                    {{getSlModelArea3(15)}}
                                     
                                  @endif
                               </b>

@@ -14,7 +14,7 @@
    <center>
       <h4 style="font-size:200%">
          <b>
-            @foreach($eShiftdate = getFshiftLatestArea2(); as $shift)
+            @foreach($fShiftdate = getFshiftLatestArea2(); as $shift)
              (Area 2 - F Shift / {{Carbon\Carbon::parse($shift->date_generated)->format('M d, Y')}})
             @endforeach
          </b>

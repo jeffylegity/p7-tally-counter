@@ -66,6 +66,7 @@ class Kernel extends HttpKernel
         'is_area2' => \App\Http\Middleware\isArea2::class,
         'is_area3' => \App\Http\Middleware\isArea3::class,
         'is_area4' => \App\Http\Middleware\isArea4::class,
+        'is_area5' => \App\Http\Middleware\isArea5::class,
     ];
 
     /**

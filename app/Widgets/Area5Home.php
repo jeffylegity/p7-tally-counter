@@ -4,9 +4,9 @@ namespace App\Widgets;
 
 use Arrilot\Widgets\AbstractWidget;
 
-class Area4Home extends AbstractWidget
+class Area5Home extends AbstractWidget
 {
-   public $reloadTimeout = 10;
+    public $reloadTimeout = 10;
     /**
      * The configuration array.
      *
@@ -20,9 +20,9 @@ class Area4Home extends AbstractWidget
      */
     public function run()
     {
-        return view('widgets.area4_home', [
+        return view('widgets.area5_home', [
             'config' => $this->config,
-            'slicing_data' =>getLatestArea4(),
+            'slicing_data' =>getLatestArea5(),
         ]);
     }
 

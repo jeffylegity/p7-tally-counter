@@ -42,6 +42,10 @@ class HomeController extends Controller
     {
       return view('pages.user.area4_home');
     }
+    public function userHomeArea5()
+    {
+      return view('pages.user.area5_home');
+    }
     /**
      * Show the application dashboard.
      *
@@ -73,6 +77,13 @@ class HomeController extends Controller
     public function adminHomeArea4()
     {
       return view('pages.admin.area4.admin_home')->with([
+            'slicing_data' =>getLatestArea4()
+            ]);
+    }
+
+    public function adminHomeArea5()
+    {
+      return view('pages.admin.area5.admin_home')->with([
             'slicing_data' =>getLatestArea4()
             ]);
     }

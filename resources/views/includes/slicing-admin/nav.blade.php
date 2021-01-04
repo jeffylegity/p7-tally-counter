@@ -54,9 +54,12 @@
                      <li>              
                         <a href="{{route('admin.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
-                     {{-- <li>              
+                     <li>              
                         <a href="{{route('admin.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
-                     </li> --}}
+                     </li>
+                     <li>              
+                        <a href="{{route('admin.area5')}}" class="waves-effect" ><span> Area 5 </span> </a>
+                     </li>
                   </ul>
               </li>
               <li class="has_sub">
@@ -71,9 +74,12 @@
                      <li>              
                         <a href="{{route('admin.records.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
-                     {{-- <li>              
+                     <li>              
                         <a href="{{route('admin.records.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
-                     </li> --}}
+                     </li>
+                     <li>              
+                        <a href="{{route('admin.records.area5')}}" class="waves-effect" ><span> Area 5 </span> </a>
+                     </li>
                   </ul>
                </li>
                <li class="has_sub">
@@ -88,9 +94,12 @@
                      <li>              
                         <a href="{{route('admin.models.area3')}}" class="waves-effect" ><span> Area 3 </span> </a>
                      </li>
-                     {{-- <li>              
+                     <li>              
                         <a href="{{route('admin.models.area4')}}" class="waves-effect" ><span> Area 4 </span> </a>
-                     </li> --}}
+                     </li>
+                     <li>              
+                        <a href="{{route('admin.models.area5')}}" class="waves-effect" ><span> Area 5 </span> </a>
+                     </li>
                   </ul>
                </li>
             </ul>
