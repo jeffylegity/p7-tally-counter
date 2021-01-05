@@ -38,6 +38,7 @@ class GenerateDataF extends Command
      */
     public function handle()
     {
+      //area 1 data structure
       DB::table('slicing_data_area1')        ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
       DB::table('slicing_actual_area1')      ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
       DB::table('slicing_test_block_area1')  ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
@@ -279,6 +280,154 @@ class GenerateDataF extends Command
       );
 
       DB::table('slicing_test_block_area3')->insert($area3_test_block);
+
+      //area 4 data structure
+      DB::table('slicing_data_area4')        ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+      DB::table('slicing_actual_area4')      ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+      DB::table('slicing_test_block_area4')  ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+
+      $area4_target = array(
+
+         'sl56_target'      => 0,
+         'sl136_target'      => 0,
+         'sl63_target'      => 0,
+         'sl135_target'      => 0,
+         'sl116_target'      => 0,
+         'sl134_target'      => 0,
+         'sl120_target'      => 0,
+         'sl133_target'      => 0,
+         'sl119_target'      => 0,
+         'sl132_target'      => 0,
+         'sl131_target'     => 0,
+         'sl137_target'     => 0,
+         'sl138_target'     => 0,
+         'sl192_target'     => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+
+      DB::table('slicing_data_area4')->insert($area4_target);
+
+      $area4_actual = array(
+
+         'sl56_actual'      => 0,
+         'sl136_actual'      => 0,
+         'sl63_actual'      => 0,
+         'sl135_actual'      => 0,
+         'sl116_actual'      => 0,
+         'sl134_actual'      => 0,
+         'sl120_actual'      => 0,
+         'sl133_actual'      => 0,
+         'sl119_actual'      => 0,
+         'sl132_actual'      => 0,
+         'sl131_actual'     => 0,
+         'sl137_actual'     => 0,
+         'sl138_actual'     => 0,
+         'sl192_actual'     => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+      
+      DB::table('slicing_actual_area4')->insert($area4_actual);
+
+      $area4_test_block = array(
+
+         'sl56_test_block'  => 0,
+         'sl136_test_block'  => 0,
+         'sl63_test_block'  => 0,
+         'sl135_test_block'  => 0,
+         'sl116_test_block'  => 0,
+         'sl134_test_block'  => 0,
+         'sl120_test_block'  => 0,
+         'sl133_test_block'  => 0,
+         'sl119_test_block'  => 0,
+         'sl132_test_block'  => 0,
+         'sl131_test_block' => 0,
+         'sl137_test_block' => 0,
+         'sl138_test_block' => 0,
+         'sl192_test_block' => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+
+      DB::table('slicing_test_block_area4')->insert($area4_test_block);
+      
+      //area 5 data structure
+      DB::table('slicing_data_area5')        ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+      DB::table('slicing_actual_area5')      ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+      DB::table('slicing_test_block_area5')  ->orderBy('id','desc')->limit(1)->update(['data_stored'=>1]);
+
+      $area5_target = array(
+
+         'sl144_target'      => 0,
+         'sl148_target'      => 0,
+         'sl145_target'      => 0,
+         'sl149_target'      => 0,
+         'sl146_target'      => 0,
+         'sl150_target'      => 0,
+         'sl147_target'      => 0,
+         'sl151_target'      => 0,
+         'sl152_target'      => 0,
+         'sl153_target'      => 0,
+         'sl154_target'     => 0,
+         'sl155_target'     => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+
+      DB::table('slicing_data_area5')->insert($area5_target);
+
+      $area5_actual = array(
+
+         'sl144_actual'      => 0,
+         'sl148_actual'      => 0,
+         'sl145_actual'      => 0,
+         'sl149_actual'      => 0,
+         'sl146_actual'      => 0,
+         'sl150_actual'      => 0,
+         'sl147_actual'      => 0,
+         'sl151_actual'      => 0,
+         'sl152_actual'      => 0,
+         'sl153_actual'      => 0,
+         'sl154_actual'     => 0,
+         'sl155_actual'     => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+      
+      DB::table('slicing_actual_area5')->insert($area5_actual);
+
+      $area5_test_block = array(
+
+         'sl144_test_block'  => 0,
+         'sl148_test_block'  => 0,
+         'sl145_test_block'  => 0,
+         'sl149_test_block'  => 0,
+         'sl146_test_block'  => 0,
+         'sl150_test_block'  => 0,
+         'sl147_test_block'  => 0,
+         'sl151_test_block'  => 0,
+         'sl152_test_block'  => 0,
+         'sl153_test_block'  => 0,
+         'sl154_test_block' => 0,
+         'sl155_test_block' => 0,
+
+         'date_generated'   =>now(),
+         'shift'            =>'F',
+         'data_stored'      =>0
+      );
+
+      DB::table('slicing_test_block_area5')->insert($area5_test_block);
       
    }  
 }

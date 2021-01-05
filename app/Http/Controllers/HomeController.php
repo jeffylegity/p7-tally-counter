@@ -84,7 +84,7 @@ class HomeController extends Controller
     public function adminHomeArea5()
     {
       return view('pages.admin.area5.admin_home')->with([
-            'slicing_data' =>getLatestArea4()
+            'slicing_data' =>getLatestArea5()
             ]);
     }
 }

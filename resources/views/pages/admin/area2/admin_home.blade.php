@@ -23,6 +23,7 @@
                            <form action="{{route('admin.update_plan.area2')}}" method="POST">
                               @csrf
                               <input type="hidden" name="data_id" value="{{$data->id}}">
+                              <hr style="border:1px solid black;">
                               <div class="row">
                                  <div class="col-lg-2">
                                     <h3><b>Plan</b></h3>

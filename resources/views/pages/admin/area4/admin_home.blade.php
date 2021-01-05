@@ -20,7 +20,6 @@
                            <a href="{{route('cache.clear')}}" class="btn" style="background-color:#034ea2;color:white;"><i class="mdi mdi-broom"></i> Clear Cache</a>
                         </div>
                         <div class="form-group">
-
                            <form action="{{route('admin.update_plan.area4')}}" method="POST">
                               @csrf
                               <input type="hidden" name="data_id" value="{{$data->id}}">
@@ -32,95 +31,129 @@
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(1)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl193_target" value="{{$data->sl193_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl56_target" value="{{$data->sl56_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-193</b></h4>
+                                       <h4><b>SL-56</b></h4>
                                     </center>
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(2)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl194_target" value="{{$data->sl194_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl136_target" value="{{$data->sl136_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-194</b></h4>
+                                       <h4><b>SL-136</b></h4>
                                     </center>
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(3)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl195_target" value="{{$data->sl195_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl63_target" value="{{$data->sl63_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-195</b></h4>
+                                       <h4><b>SL-63</b></h4>
                                     </center>
                                  </div>  
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(4)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl196_target" value="{{$data->sl196_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl135_target" value="{{$data->sl135_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-196</b></h4>
+                                       <h4><b>SL-135</b></h4>
                                     </center>
                                  </div> 
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(5)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl197_target" value="{{$data->sl197_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl116_target" value="{{$data->sl116_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-197</b></h4>
+                                       <h4><b>SL-116</b></h4>
                                     </center>
                                  </div> 
                               </div>
-                              <hr style="border:1px solid black;">
                               <div class="row">
-                                 <div class="col-lg-2"></div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(6)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl198_target" value="{{$data->sl198_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl134_target" value="{{$data->sl134_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-198</b></h4>
+                                       <h4><b>SL-134</b></h4>
                                     </center>
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(7)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl199_target" value="{{$data->sl199_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl120_target" value="{{$data->sl120_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-199</b></h4>
+                                       <h4><b>SL-120</b></h4>
                                     </center>
                                  </div>
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(8)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl200_target" value="{{$data->sl200_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl133_target" value="{{$data->sl133_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>SL-200</b></h4>
+                                       <h4><b>SL-133</b></h4>
                                     </center>
                                  </div>  
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(9)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="bc7_target" value="{{$data->bc7_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl119_target" value="{{$data->sl119_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>BC-7</b></h4>
+                                       <h4><b>SL-119</b></h4>
                                     </center>
                                  </div> 
                                  <div class="col-lg-2">
                                     <center>
                                        <h4><b>{{getSlModelArea4(10)}}</b></h4>
-                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="csl1_target" value="{{$data->csl1_target}}">
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl132_target" value="{{$data->sl132_target}}">
                                     </center>
                                     <center>
-                                       <h4><b>CSL-1</b></h4>
+                                       <h4><b>SL-132</b></h4>
+                                    </center>
+                                 </div> 
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSlModelArea4(11)}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl131_target" value="{{$data->sl131_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-131</b></h4>
+                                    </center>
+                                 </div> 
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSlModelArea4(12)}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl137_target" value="{{$data->sl137_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-137</b></h4>
+                                    </center>
+                                 </div> 
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSlModelArea4(13)}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl138_target" value="{{$data->sl138_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-138</b></h4>
+                                    </center>
+                                 </div> 
+                                 <div class="col-lg-2">
+                                    <center>
+                                       <h4><b>{{getSlModelArea4(14)}}</b></h4>
+                                       <input type="text" class="form-control" style="text-align:center;font-size:250%;font-weight:bold;color:#212529;" name="sl192_target" value="{{$data->sl192_target}}">
+                                    </center>
+                                    <center>
+                                       <h4><b>SL-192</b></h4>
                                     </center>
                                  </div> 
                                  <div class="col-lg-12" style="display:flex;align-items:center;justify-content:center;">

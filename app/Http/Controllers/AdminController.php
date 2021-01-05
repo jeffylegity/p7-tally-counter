@@ -576,7 +576,7 @@ class AdminController extends Controller
          'sl133_target'=>$request->input('sl133_target'),
          'sl119_target'=>$request->input('sl119_target'),
          'sl132_target'=>$request->input('sl132_target'),
-         'sl131target'=>$request->input('sl131target'),
+         'sl131_target'=>$request->input('sl131target'),
          'sl137_target'=>$request->input('sl137_target'),
          'sl138_target'=>$request->input('sl138_target'),
          'sl192_target'=>$request->input('sl192_target'),
