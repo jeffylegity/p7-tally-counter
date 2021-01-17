@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 02, 2020 at 06:28 AM
--- Server version: 10.3.16-MariaDB
--- PHP Version: 7.3.6
+-- Generation Time: Jan 17, 2021 at 03:13 AM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.3.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -171,6 +171,13 @@ CREATE TABLE `slicing_actual_area1` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_actual_area1`
+--
+
+INSERT INTO `slicing_actual_area1` (`id`, `sl88_actual`, `sl90_actual`, `sl89_actual`, `sl93_actual`, `sl91_actual`, `sl94_actual`, `sl92_actual`, `sl95_actual`, `sl97_actual`, `sl98_actual`, `sl102_actual`, `sl105_actual`, `sl103_actual`, `sl104_actual`, `sl106_actual`, `sl107_actual`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(6, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -201,6 +208,13 @@ CREATE TABLE `slicing_actual_area2` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_actual_area2`
+--
+
+INSERT INTO `slicing_actual_area2` (`id`, `sl52_actual`, `sl55_actual`, `sl53_actual`, `sl60_actual`, `sl114_actual`, `sl113_actual`, `sl117_actual`, `sl122_actual`, `sl123_actual`, `sl121_actual`, `sl141_actual`, `sl139_actual`, `sl142_actual`, `sl140_actual`, `sl187_actual`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -233,6 +247,13 @@ CREATE TABLE `slicing_actual_area3` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_actual_area3`
+--
+
+INSERT INTO `slicing_actual_area3` (`id`, `sl96_actual`, `sl101_actual`, `sl84_actual`, `sl100_actual`, `sl64_actual`, `sl59_actual`, `sl57_actual`, `sl58_actual`, `sl99_actual`, `sl111_actual`, `sl109_actual`, `sl112_actual`, `sl110_actual`, `sl143_actual`, `sl108_actual`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -263,6 +284,13 @@ CREATE TABLE `slicing_actual_area4` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_actual_area4`
+--
+
+INSERT INTO `slicing_actual_area4` (`id`, `sl56_actual`, `sl136_actual`, `sl63_actual`, `sl135_actual`, `sl116_actual`, `sl134_actual`, `sl120_actual`, `sl133_actual`, `sl119_actual`, `sl132_actual`, `sl131_actual`, `sl137_actual`, `sl138_actual`, `sl192_actual`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '1', '2', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -290,6 +318,13 @@ CREATE TABLE `slicing_actual_area5` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_actual_area5`
+--
+
+INSERT INTO `slicing_actual_area5` (`id`, `sl144_actual`, `sl148_actual`, `sl145_actual`, `sl149_actual`, `sl146_actual`, `sl150_actual`, `sl147_actual`, `sl151_actual`, `sl152_actual`, `sl153_actual`, `sl154_actual`, `sl155_actual`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -338,6 +373,13 @@ CREATE TABLE `slicing_data_area1` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_data_area1`
+--
+
+INSERT INTO `slicing_data_area1` (`id`, `sl88_target`, `sl90_target`, `sl89_target`, `sl93_target`, `sl91_target`, `sl94_target`, `sl92_target`, `sl95_target`, `sl97_target`, `sl98_target`, `sl102_target`, `sl105_target`, `sl103_target`, `sl104_target`, `sl106_target`, `sl107_target`, `sl88_model`, `sl90_model`, `sl89_model`, `sl93_model`, `sl91_model`, `sl94_model`, `sl92_model`, `sl95_model`, `sl97_model`, `sl98_model`, `sl102_model`, `sl105_model`, `sl103_model`, `sl104_model`, `sl106_model`, `sl107_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(6, '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', '5', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-04 18:13:44', 'E', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -382,6 +424,13 @@ CREATE TABLE `slicing_data_area2` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_data_area2`
+--
+
+INSERT INTO `slicing_data_area2` (`id`, `sl52_target`, `sl55_target`, `sl53_target`, `sl60_target`, `sl114_target`, `sl113_target`, `sl117_target`, `sl122_target`, `sl123_target`, `sl121_target`, `sl141_target`, `sl139_target`, `sl142_target`, `sl140_target`, `sl187_target`, `sl52_model`, `sl55_model`, `sl53_model`, `sl60_model`, `sl114_model`, `sl113_model`, `sl117_model`, `sl122_model`, `sl123_model`, `sl121_model`, `sl141_model`, `sl139_model`, `sl142_model`, `sl140_model`, `sl187_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(1, '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', '3', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-04 18:13:44', 'E', 0, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -428,6 +477,13 @@ CREATE TABLE `slicing_data_area3` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_data_area3`
+--
+
+INSERT INTO `slicing_data_area3` (`id`, `sl96_target`, `sl101_target`, `sl84_target`, `sl100_target`, `sl64_target`, `sl59_target`, `sl57_target`, `sl58_target`, `sl99_target`, `sl111_target`, `sl109_target`, `sl112_target`, `sl110_target`, `sl143_target`, `sl108_target`, `sl96_model`, `sl101_model`, `sl84_model`, `sl100_model`, `sl64_model`, `sl59_model`, `sl57_model`, `sl58_model`, `sl99_model`, `sl111_model`, `sl109_model`, `sl112_model`, `sl110_model`, `sl143_model`, `sl108_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(1, '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', '2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-04 18:13:44', 'E', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -471,6 +527,13 @@ CREATE TABLE `slicing_data_area4` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_data_area4`
+--
+
+INSERT INTO `slicing_data_area4` (`id`, `sl56_target`, `sl136_target`, `sl63_target`, `sl135_target`, `sl116_target`, `sl134_target`, `sl120_target`, `sl133_target`, `sl119_target`, `sl132_target`, `sl131_target`, `sl137_target`, `sl138_target`, `sl192_target`, `sl56_model`, `sl136_model`, `sl63_model`, `sl135_model`, `sl116_model`, `sl134_model`, `sl120_model`, `sl133_model`, `sl119_model`, `sl132_model`, `sl131_model`, `sl137_model`, `sl138_model`, `sl192_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(1, '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', NULL, '1', '1', '1', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-04 18:13:44', 'E', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -510,6 +573,13 @@ CREATE TABLE `slicing_data_area5` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_data_area5`
+--
+
+INSERT INTO `slicing_data_area5` (`id`, `sl144_target`, `sl148_target`, `sl145_target`, `sl149_target`, `sl146_target`, `sl150_target`, `sl147_target`, `sl151_target`, `sl152_target`, `sl153_target`, `sl154_target`, `sl155_target`, `sl144_model`, `sl148_model`, `sl145_model`, `sl149_model`, `sl146_model`, `sl150_model`, `sl147_model`, `sl151_model`, `sl152_model`, `sl153_model`, `sl154_model`, `sl155_model`, `date_generated`, `shift`, `data_stored`, `created_at`, `updated_at`) VALUES
+(1, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2021-01-04 18:13:44', 'E', 0, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -542,6 +612,16 @@ CREATE TABLE `slicing_logs_area2` (
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_logs_area2`
+--
+
+INSERT INTO `slicing_logs_area2` (`id`, `data_id`, `machine_no`, `action`, `type`, `model_output`, `created_at`) VALUES
+(1, 1, 'SL-52', '+1', 'test_block', '---', '2021-01-05 13:26:02'),
+(2, 1, 'SL-55', '+1', 'test_block', '---', '2021-01-05 13:26:04'),
+(3, 1, 'SL-53', '+1', 'test_block', '---', '2021-01-05 13:26:07'),
+(4, 1, 'SL-60', '+1', 'test_block', '---', '2021-01-05 13:26:10');
+
 -- --------------------------------------------------------
 
 --
@@ -558,6 +638,29 @@ CREATE TABLE `slicing_logs_area3` (
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_logs_area3`
+--
+
+INSERT INTO `slicing_logs_area3` (`id`, `data_id`, `machine_no`, `action`, `type`, `model_output`, `created_at`) VALUES
+(1, 1, 'SL-96', '+1', 'actual', '---', '2021-01-04 18:33:01'),
+(2, 1, 'SL-101', '+1', 'actual', '---', '2021-01-04 18:33:05'),
+(3, 1, 'SL-84', '+1', 'actual', '---', '2021-01-04 18:33:06'),
+(4, 1, 'SL-96', '+1', 'test_block', '---', '2021-01-05 13:16:26'),
+(5, 1, 'SL-101', '+1', 'test_block', '---', '2021-01-05 13:16:28'),
+(6, 1, 'SL-84', '+1', 'test_block', '---', '2021-01-05 13:16:30'),
+(7, 1, 'SL-100', '+1', 'test_block', '---', '2021-01-05 13:16:32'),
+(8, 1, 'SL-64', '+1', 'test_block', '---', '2021-01-05 13:16:34'),
+(9, 1, 'SL-59', '+1', 'test_block', '---', '2021-01-05 13:16:37'),
+(10, 1, 'SL-96', '+1', 'test_block', '---', '2021-01-05 13:16:43'),
+(11, 1, 'SL-101', '+1', 'test_block', '---', '2021-01-05 13:17:08'),
+(12, 1, 'SL-84', '+1', 'test_block', '---', '2021-01-05 13:17:47'),
+(13, 1, 'SL-100', '+1', 'test_block', '---', '2021-01-05 13:17:49'),
+(14, 1, 'SL-64', '+1', 'test_block', '---', '2021-01-05 13:17:51'),
+(15, 1, 'SL-59', '+1', 'test_block', '---', '2021-01-05 13:17:52'),
+(16, 1, 'SL-57', '+1', 'test_block', '---', '2021-01-05 13:17:54'),
+(17, 1, 'SL-57', '+1', 'test_block', '---', '2021-01-05 13:24:06');
+
 -- --------------------------------------------------------
 
 --
@@ -573,6 +676,36 @@ CREATE TABLE `slicing_logs_area4` (
   `model_output` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_logs_area4`
+--
+
+INSERT INTO `slicing_logs_area4` (`id`, `data_id`, `machine_no`, `action`, `type`, `model_output`, `created_at`) VALUES
+(1, 1, 'SL-56', '+1', 'actual', '---', '2021-01-04 18:38:29'),
+(2, 1, 'SL-136', '+1', 'actual', '---', '2021-01-04 18:38:31'),
+(3, 1, 'SL-63', '+1', 'actual', '---', '2021-01-04 18:38:33'),
+(4, 1, 'SL-135', '+1', 'actual', '---', '2021-01-04 18:38:38'),
+(5, 1, 'SL-116', '+1', 'actual', '---', '2021-01-04 18:38:39'),
+(6, 1, 'SL-134', '+1', 'actual', '---', '2021-01-04 18:38:41'),
+(7, 1, 'SL-120', '+1', 'actual', '---', '2021-01-04 18:38:42'),
+(8, 1, 'SL-119', '+1', 'actual', '---', '2021-01-04 18:38:44'),
+(9, 1, 'SL-133', '+1', 'actual', '---', '2021-01-04 18:38:46'),
+(10, 1, 'SL-192', '+1', 'actual', '---', '2021-01-04 18:38:48'),
+(11, 1, 'SL-138', '+1', 'actual', '---', '2021-01-04 18:38:49'),
+(12, 1, 'SL-137', '+1', 'actual', '---', '2021-01-04 18:38:50'),
+(13, 1, 'SL-131', '+1', 'actual', '---', '2021-01-04 18:38:51'),
+(14, 1, 'SL-132', '+1', 'actual', '---', '2021-01-04 18:38:53'),
+(15, 1, 'SL-136', '+1', 'actual', '---', '2021-01-04 18:39:10'),
+(16, 1, 'SL-56', '+1', 'test_block', '---', '2021-01-05 13:14:43'),
+(17, 1, 'SL-136', '+1', 'test_block', '---', '2021-01-05 13:15:23'),
+(18, 1, 'SL-63', '+1', 'test_block', '---', '2021-01-05 13:15:25'),
+(19, 1, 'SL-135', '+1', 'test_block', '---', '2021-01-05 13:15:27'),
+(20, 1, 'SL-116', '+1', 'test_block', '---', '2021-01-05 13:15:28'),
+(21, 1, 'SL-134', '+1', 'test_block', '---', '2021-01-05 13:15:30'),
+(22, 1, 'SL-120', '+1', 'test_block', '---', '2021-01-05 13:15:32'),
+(23, 1, 'SL-133', '+1', 'test_block', '---', '2021-01-05 13:15:34'),
+(24, 1, 'SL-119', '+1', 'test_block', '---', '2021-01-05 13:15:36');
 
 -- --------------------------------------------------------
 
@@ -640,6 +773,27 @@ CREATE TABLE `slicing_model_area2` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_model_area2`
+--
+
+INSERT INTO `slicing_model_area2` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
+(1, '---', 'SL-52', NULL, NULL),
+(2, '---', 'SL-55', NULL, NULL),
+(3, '---', 'SL-53', NULL, NULL),
+(4, '---', 'SL-60', NULL, NULL),
+(5, '---', 'SL-114', NULL, NULL),
+(6, '---', 'SL-113', NULL, NULL),
+(7, '---', 'SL-117', NULL, NULL),
+(8, '---', 'SL-122', NULL, NULL),
+(9, '---', 'SL-123', NULL, NULL),
+(10, '---', 'SL-121', NULL, NULL),
+(11, '---', 'SL-141', NULL, NULL),
+(12, '---', 'SL-139', NULL, NULL),
+(13, '---', 'SL-142', NULL, NULL),
+(14, '---', 'SL-140', NULL, NULL),
+(15, '---', 'SL-187', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -653,6 +807,27 @@ CREATE TABLE `slicing_model_area3` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_model_area3`
+--
+
+INSERT INTO `slicing_model_area3` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
+(1, '---', 'SL-96', NULL, NULL),
+(2, '---', 'SL-101', NULL, NULL),
+(3, '---', 'SL-84', NULL, NULL),
+(4, '---', 'SL-100', NULL, NULL),
+(5, '---', 'SL-64', NULL, NULL),
+(6, '---', 'SL-59', NULL, NULL),
+(7, '---', 'SL-57', NULL, NULL),
+(8, '---', 'SL-58', NULL, NULL),
+(9, '---', 'SL-99', NULL, NULL),
+(10, '---', 'SL-111', NULL, NULL),
+(11, '---', 'SL-109', NULL, NULL),
+(12, '---', 'SL-112', NULL, NULL),
+(13, '---', 'SL-110', NULL, NULL),
+(14, '---', 'SL-143', NULL, NULL),
+(15, '---', 'SL-108', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -668,6 +843,26 @@ CREATE TABLE `slicing_model_area4` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_model_area4`
+--
+
+INSERT INTO `slicing_model_area4` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
+(1, '---', 'SL-56', NULL, NULL),
+(2, '---', 'SL-136', NULL, NULL),
+(3, '---', 'SL-63', NULL, NULL),
+(4, '---', 'SL-135', NULL, NULL),
+(5, 'MED-0697G', 'SL-116', NULL, NULL),
+(6, '---', 'SL-134', NULL, NULL),
+(7, '---', 'SL-120', NULL, NULL),
+(8, '---', 'SL-133', NULL, NULL),
+(9, '---', 'SL-119', NULL, NULL),
+(10, '---', 'SL-132', NULL, NULL),
+(11, '---', 'SL-131', NULL, NULL),
+(12, '---', 'SL-137', NULL, NULL),
+(13, '---', 'SL-138', NULL, NULL),
+(14, '---', 'SL-192', NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -681,6 +876,24 @@ CREATE TABLE `slicing_model_area5` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_model_area5`
+--
+
+INSERT INTO `slicing_model_area5` (`id`, `model_name`, `machine_no`, `created_at`, `updated_at`) VALUES
+(1, '---', 'SL-144', NULL, NULL),
+(2, '---', 'SL-148', NULL, NULL),
+(3, '---', 'SL-145', NULL, NULL),
+(4, '---', 'SL-149', NULL, NULL),
+(5, '---', 'SL-146', NULL, NULL),
+(6, '---', 'SL-150', NULL, NULL),
+(7, '---', 'SL-147', NULL, NULL),
+(8, '---', 'SL-151', NULL, NULL),
+(9, '---', 'SL-152', NULL, NULL),
+(10, '---', 'SL-153', NULL, NULL),
+(11, '---', 'SL-154', NULL, NULL),
+(12, '---', 'SL-155', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -714,6 +927,13 @@ CREATE TABLE `slicing_test_block_area1` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_test_block_area1`
+--
+
+INSERT INTO `slicing_test_block_area1` (`id`, `sl88_test_block`, `sl90_test_block`, `sl89_test_block`, `sl93_test_block`, `sl91_test_block`, `sl94_test_block`, `sl92_test_block`, `sl95_test_block`, `sl97_test_block`, `sl98_test_block`, `sl102_test_block`, `sl105_test_block`, `sl103_test_block`, `sl104_test_block`, `sl106_test_block`, `sl107_test_block`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(6, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -744,6 +964,13 @@ CREATE TABLE `slicing_test_block_area2` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_test_block_area2`
+--
+
+INSERT INTO `slicing_test_block_area2` (`id`, `sl52_test_block`, `sl55_test_block`, `sl53_test_block`, `sl60_test_block`, `sl114_test_block`, `sl113_test_block`, `sl117_test_block`, `sl122_test_block`, `sl123_test_block`, `sl121_test_block`, `sl141_test_block`, `sl139_test_block`, `sl142_test_block`, `sl140_test_block`, `sl187_test_block`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '1', '1', '1', '1', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -776,6 +1003,13 @@ CREATE TABLE `slicing_test_block_area3` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_test_block_area3`
+--
+
+INSERT INTO `slicing_test_block_area3` (`id`, `sl96_test_block`, `sl101_test_block`, `sl84_test_block`, `sl100_test_block`, `sl64_test_block`, `sl59_test_block`, `sl57_test_block`, `sl58_test_block`, `sl99_test_block`, `sl111_test_block`, `sl109_test_block`, `sl112_test_block`, `sl110_test_block`, `sl143_test_block`, `sl108_test_block`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '2', '2', '2', '2', '2', '2', '2', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -806,6 +1040,13 @@ CREATE TABLE `slicing_test_block_area4` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `slicing_test_block_area4`
+--
+
+INSERT INTO `slicing_test_block_area4` (`id`, `sl56_test_block`, `sl136_test_block`, `sl63_test_block`, `sl135_test_block`, `sl116_test_block`, `sl134_test_block`, `sl120_test_block`, `sl133_test_block`, `sl119_test_block`, `sl132_test_block`, `sl131_test_block`, `sl137_test_block`, `sl138_test_block`, `sl192_test_block`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '1', '1', '1', '1', '1', '1', '1', '1', '1', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -833,6 +1074,13 @@ CREATE TABLE `slicing_test_block_area5` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `slicing_test_block_area5`
+--
+
+INSERT INTO `slicing_test_block_area5` (`id`, `sl144_test_block`, `sl148_test_block`, `sl145_test_block`, `sl149_test_block`, `sl146_test_block`, `sl150_test_block`, `sl147_test_block`, `sl151_test_block`, `sl152_test_block`, `sl153_test_block`, `sl154_test_block`, `sl155_test_block`, `date_generated`, `shift`, `data_stored`, `foreign_key`, `created_at`, `updated_at`) VALUES
+(1, '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', '2021-01-04 18:13:44', 'E', 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -866,11 +1114,12 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `name`, `password`, `date_hired`, `gender`, `status`, `emp_status`, `division`, `department`, `section`, `position`, `role`, `area`, `email_verified_at`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'p7-admin', 'P7 Administrator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 8/9/10', 'P8', 'P8 MACHINING', 'ENGINEER', 1, NULL, NULL, NULL, NULL, NULL),
-(2, 'tc-area1', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 8/9/10', 'SLICING', 'SLICING', 'OPERATOR', NULL, '1', NULL, NULL, NULL, NULL),
-(3, 'tc-area2', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 8/9/10', 'SLICING', 'SLICING', 'OPERATOR', NULL, '2', NULL, NULL, NULL, NULL),
-(4, 'tc-area3', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 8/9/10', 'SLICING', 'SLICING', 'OPERATOR', NULL, '3', NULL, NULL, NULL, NULL),
-(5, 'tc-area4', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 8/9/10', 'SLICING', 'SLICING', 'OPERATOR', NULL, '4', NULL, NULL, NULL, NULL);
+(1, 'p7-admin', 'P7 Administrator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 7', 'P7', 'P7 MACHINING', 'ENGINEER', 1, NULL, NULL, NULL, NULL, NULL),
+(2, 'tc-area1', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 7', 'SLICING', 'SLICING', 'OPERATOR', NULL, '1', NULL, NULL, NULL, NULL),
+(3, 'tc-area2', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 7', 'SLICING', 'SLICING', 'OPERATOR', NULL, '2', NULL, NULL, NULL, NULL),
+(4, 'tc-area3', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 7', 'SLICING', 'SLICING', 'OPERATOR', NULL, '3', NULL, NULL, NULL, NULL),
+(5, 'tc-area4', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 7', 'SLICING', 'SLICING', 'OPERATOR', NULL, '4', NULL, NULL, NULL, NULL),
+(7, 'tc-area5', 'Slicing Operator', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'N/A', 'N/A', 'N/A', 'SMP', 'PLANT 7', 'SLICING', 'SLICING', 'OPERATOR', NULL, '5', NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -1065,61 +1314,61 @@ ALTER TABLE `models`
 -- AUTO_INCREMENT for table `slicing_actual_area1`
 --
 ALTER TABLE `slicing_actual_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `slicing_actual_area2`
 --
 ALTER TABLE `slicing_actual_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_actual_area3`
 --
 ALTER TABLE `slicing_actual_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_actual_area4`
 --
 ALTER TABLE `slicing_actual_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_actual_area5`
 --
 ALTER TABLE `slicing_actual_area5`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area1`
 --
 ALTER TABLE `slicing_data_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area2`
 --
 ALTER TABLE `slicing_data_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area3`
 --
 ALTER TABLE `slicing_data_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area4`
 --
 ALTER TABLE `slicing_data_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_data_area5`
 --
 ALTER TABLE `slicing_data_area5`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area1`
@@ -1131,19 +1380,19 @@ ALTER TABLE `slicing_logs_area1`
 -- AUTO_INCREMENT for table `slicing_logs_area2`
 --
 ALTER TABLE `slicing_logs_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area3`
 --
 ALTER TABLE `slicing_logs_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area4`
 --
 ALTER TABLE `slicing_logs_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `slicing_logs_area5`
@@ -1161,61 +1410,61 @@ ALTER TABLE `slicing_model_area1`
 -- AUTO_INCREMENT for table `slicing_model_area2`
 --
 ALTER TABLE `slicing_model_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `slicing_model_area3`
 --
 ALTER TABLE `slicing_model_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `slicing_model_area4`
 --
 ALTER TABLE `slicing_model_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `slicing_model_area5`
 --
 ALTER TABLE `slicing_model_area5`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `slicing_test_block_area1`
 --
 ALTER TABLE `slicing_test_block_area1`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `slicing_test_block_area2`
 --
 ALTER TABLE `slicing_test_block_area2`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_test_block_area3`
 --
 ALTER TABLE `slicing_test_block_area3`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_test_block_area4`
 --
 ALTER TABLE `slicing_test_block_area4`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `slicing_test_block_area5`
 --
 ALTER TABLE `slicing_test_block_area5`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
