@@ -59,7 +59,9 @@ class LoginController extends Controller
                return redirect()->route('user.home.area3');
             }elseif (auth()->user()->role == null && auth()->user()->area == 4) {
                return redirect()->route('user.home.area4');
-            }
+            }elseif (auth()->user()->role == null && auth()->user()->area == 5) {
+                return redirect()->route('user.home.area5');
+             }
         }else{
             return redirect()->route('login')->with('error','Username And Password Are Wrong.');
         }    

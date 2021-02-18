@@ -19,7 +19,11 @@ class CommonPageController extends Controller
       return view('pages.user.slicing_common_area3');
    }
 
-   // public function slicingCommonPageArea4(){
-   //    return view('pages.user.slicing_common_area4');
-   // }
+   public function slicingCommonPageArea4(){
+      return view('pages.user.slicing_common_area4');
+   }
+
+   public function slicingCommonPageArea5(){
+      return view('pages.user.slicing_common_area5');
+   }
 }

@@ -29,6 +29,10 @@ class UserController extends Controller
          $data_tbl_selector = 'slicing_actual_area4';
          $logs_tbl_selector = 'slicing_logs_area4';
          $logs = getLatestArea4();
+      } elseif ($area == '5') {
+         $data_tbl_selector = 'slicing_actual_area5';
+         $logs_tbl_selector = 'slicing_logs_area5';
+         $logs = getLatestArea5();
       }
 
       $fetch = DB::table($data_tbl_selector)->select($col_selector)
@@ -78,6 +82,10 @@ class UserController extends Controller
          $data_tbl_selector = 'slicing_test_block_area4';
          $logs_tbl_selector = 'slicing_logs_area4';
          $logs = getLatestArea4();
+      } elseif ($area == '5') {
+         $data_tbl_selector = 'slicing_test_block_area5';
+         $logs_tbl_selector = 'slicing_logs_area5';
+         $logs = getLatestArea5();
       }
 
       $fetch = DB::table($data_tbl_selector)->select($col_selector)
@@ -138,6 +146,12 @@ class UserController extends Controller
             $logs_tbl_selector = 'slicing_logs_area4';
             $logs = getLatestArea4(); 
          break;
+
+         case '5':
+            $data_tbl_selector = 'slicing_actual_area5';
+            $logs_tbl_selector = 'slicing_logs_area5';
+            $logs = getLatestArea5(); 
+         break;
       }
 
       $fetch = DB::table($data_tbl_selector)->select($col_selector)
@@ -193,6 +207,12 @@ class UserController extends Controller
             $data_tbl_selector = 'slicing_test_block_area4';
             $logs_tbl_selector = 'slicing_logs_area4';
             $logs = getLatestArea4(); 
+         break;
+
+         case '5':
+            $data_tbl_selector = 'slicing_test_block_area5';
+            $logs_tbl_selector = 'slicing_logs_area5';
+            $logs = getLatestArea5(); 
          break;
       }
 
